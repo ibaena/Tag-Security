@@ -1,8 +1,13 @@
+/*html body{
+  width: 100%;
+  height: 100%
+}
 body{
   margin: 0;
 }
+
 @mixin angle-edge($pos-top:null, $angle-top:null, $pos-btm:null, $angle-btm:null){
-  height: 600px;
+  height: 400px;
   width: 100%;
   position: relative;
 
@@ -13,6 +18,7 @@ body{
     height: 100%;
     position: absolute;
     background: inherit;
+
     transition: ease all .5s;
   }
 
@@ -50,40 +56,103 @@ body{
 }
 
 .block-header{
-  @include angle-edge(topleft, 3deg, bottomleft, 3deg);
-  background: black;
-  height: 700px !important;
+  //@include angle-edge(topright, 3deg);
+
+  height: 65%;
+  transform: skew(0deg, -3deg);
+  margin-top: -80px;
+  z-index: 1;
+
+  height: 650px;
+  background-image: url(../img/header-bg.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .block-content-footer{
-  @include angle-edge(topleft, 3deg);
-  background: grey;
-  height: 350px !important;
+  //@include angle-edge(topright, 3deg);
+  background: #BDBDBD;
+  height: 300px !important;
   padding-bottom: 50px;
 }
 
 .block-content-even{
-  @include angle-edge(topright, 3deg, bottomright, 3deg);
-  padding-top: 95px;
-  background: green;
-  z-index: 1;
-}
-.block-content-spacer{
-  @include angle-edge(topleft, 3deg, bottomleft, 3deg);
-  padding-top: 95px;
-  background: pink;
-  z-index: 1;
-  height: 275px !important;
+  //@include angle-edge(topright, 3deg, bottomright, 3deg);
 }
 .block-content-odd{
-  @include angle-edge(topleft, 3deg, bottomleft, 3deg);
-  padding-top: 95px;
-  background: black;
-  z-index: 1;
+  //@include angle-edge(topleft, 3deg, bottomleft, 3deg);
 }
+
+.block-content-spacer{
+  //@include angle-edge(topleft, 3deg, bottomleft, 3deg);
+  height: 300px !important;
+  background-image: url(../img/first-divider.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 
 .copy{
   width: 100%;
-  background: blue;
+  background: #212121;
   height: 50px;
 }
+
+//BAckground Styles
+/*Background Styles*/
+
+#first-page{
+  height: 70vh;
+  width:100%;
+  background-image: url(../img/what-we-offer-bg.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#offer-bg{
+  height: 70vh;
+  width:100%;
+  background-image: url(../img/what-we-offer-bg.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.getInTouch{
+  height: 70vh;
+  width:100%;
+  background-image: url(../img/get-in-touch-bg.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+#how-bg{
+  height: 70vh;
+  width:100%;
+  background-image: url(../img/how-bg.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#analysis{
+  height: 70vh;
+  width:100%;
+  background-image: url(../img/analysis-bg-2.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+//Spacer Styles
+/*Spacer Styles*/
+
+#service-bg{
+  height: 70vh;
+  width:100%;
+  background-image: url(../img/our-services-bg.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+.wrapper{
+   width: 100%;
+}*/
