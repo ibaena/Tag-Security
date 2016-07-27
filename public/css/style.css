@@ -13,7 +13,8 @@ body {
   /*What Do We Offer Content Styles*/
   /*What Do We Offer Content Styles*/
   /*Services Offer Content Styles*/
-  /*How Content Styles*/ }
+  /*Contact Styles*/
+  /*Footer Content Styles*/ }
   #skewed nav {
     float: right;
     margin-right: 20px;
@@ -141,7 +142,7 @@ body {
       #skewed #services-block .services-text .thinner-text {
         font-weight: 100; }
   #skewed #contact-block {
-    height: 600px !important;
+    height: 475px !important;
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
@@ -160,3 +161,9 @@ body {
     #skewed #contact-block #contact-sub-text {
       color: white;
       font-size: 1vw; }
+  #skewed #footer-block #first-footer {
+    height: 250px !important;
+    background-color: #757575; }
+  #skewed #footer-block #second-footer {
+    height: 45px !important;
+    background-color: #212121; }

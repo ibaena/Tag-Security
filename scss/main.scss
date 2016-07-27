@@ -204,10 +204,10 @@ body{
       }
   }
 
-  //How Content Styles
-  /*How Content Styles*/
+  //Contact Styles
+  /*Contact Styles*/
   #contact-block{
-    height: 600px !important;
+    height: 475px !important;
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -232,5 +232,19 @@ body{
         color: white;
         font-size: 1vw;
       }
+  }
+
+  //Footer Content Styles
+  /*Footer Content Styles*/
+  #footer-block{
+    #first-footer{
+      height: 250px !important;
+      background-color: #757575;
+
+    }
+    #second-footer{
+      height: 45px !important;
+      background-color: #212121;
+    }
   }
 }
