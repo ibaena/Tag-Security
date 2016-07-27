@@ -34,6 +34,9 @@ html body {
 body {
   margin: 0 auto; }
 
+.hidden {
+  display: none; }
+
 #skewed {
   /*Header Content Styles*/
   /*Why Content Styles*/

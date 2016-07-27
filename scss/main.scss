@@ -11,6 +11,8 @@ body{
 
 }
 
+.hidden { display: none; }
+
 //Skewed DIV section
 #skewed{
   nav{
@@ -36,6 +38,9 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     .header-wrapper{
+      ul{
+        
+      }
       section{
         .logo-wrapper{
           #brand-logo{
