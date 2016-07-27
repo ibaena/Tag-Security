@@ -1,3 +1,5 @@
+@import 'angle';
+
 //Page Sizing and Margins
 html body{
   height: 100%;
@@ -21,24 +23,27 @@ body{
   .content-block{
     height: 500px;
     width: 100%;
+
   }
 
   //Header Content Styles
   /*Header Content Styles*/
   #header{
+    @include angle(after);
     height: 625px !important;
     background-image: url(../img/header-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
       section{
         .logo-wrapper{
           #brand-logo{
             display: block;
             margin: 0 auto;
             padding-top: 30px;
-            width: 450px;
+            width: 100%;
             height: auto;
-            max-width: 100%;
+            max-width: 450px;
             border-radius: 50%;
           }
         }
@@ -52,6 +57,7 @@ body{
   //Why Content Styles
   /*Why Content Styles*/
   #why-exist-block{
+    @include angle(both, true);
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -80,6 +86,7 @@ body{
   //Divider Styles
   /*Divider Styles*/
   .first-divider{
+    @include angle(both);
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
@@ -87,6 +94,7 @@ body{
     background-repeat: no-repeat;
   }
   .second-divider{
+    @include angle(both);
     height: 300px !important;
     width: 100%;
     background-image: url(../img/second-divider.png) !important;
@@ -97,6 +105,7 @@ body{
   //How Content Styles
   /*How Content Styles*/
   #how-block{
+    @include angle(both, true);
     background-image: url(../img/how-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -125,6 +134,7 @@ body{
   //What Do We Offer Content Styles
   /*What Do We Offer Content Styles*/
   #what-block{
+    @include angle(both, true);
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -156,6 +166,7 @@ body{
   //What Do We Offer Content Styles
   /*What Do We Offer Content Styles*/
   #analysis-block{
+    @include angle(both);
     background-image: url(../img/analysis-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -178,6 +189,7 @@ body{
   //Services Offer Content Styles
   /*Services Offer Content Styles*/
   #services-block{
+    @include angle(both, true);
     background-image: url(../img/our-services-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -209,6 +221,7 @@ body{
   //Contact Styles
   /*Contact Styles*/
   #contact-block{
+    @include angle(both);
     height: 475px !important;
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
@@ -239,7 +252,9 @@ body{
   //Footer Content Styles
   /*Footer Content Styles*/
   #footer-block{
+
     #first-footer{
+      @include angle(before, true);
       height: 250px !important;
       background-color: #BDBDBD;
       color: white;

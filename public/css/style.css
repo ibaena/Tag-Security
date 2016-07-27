@@ -26,25 +26,61 @@ body {
     height: 500px;
     width: 100%; }
   #skewed #header {
+    position: relative;
+    z-index: 1;
     height: 625px !important;
     background-image: url(../img/header-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #header:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #header:after {
+      bottom: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%; }
     #skewed #header section .logo-wrapper #brand-logo {
       display: block;
       margin: 0 auto;
       padding-top: 30px;
-      width: 450px;
+      width: 100%;
       height: auto;
-      max-width: 100%;
+      max-width: 450px;
       border-radius: 50%; }
     #skewed #header section #header-title {
       margin-top: 20px;
       font-size: 2.5vw; }
   #skewed #why-exist-block {
+    position: relative;
+    z-index: 1;
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #why-exist-block:before, #skewed #why-exist-block:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #why-exist-block:before {
+      top: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 0 0; }
+    #skewed #why-exist-block:after {
+      bottom: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 0 0; }
     #skewed #why-exist-block .main-title {
       padding-top: 40px; }
     #skewed #why-exist-block .why-text {
@@ -60,21 +96,81 @@ body {
       color: white;
       font-size: 1vw; }
   #skewed .first-divider {
+    position: relative;
+    z-index: 1;
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed .first-divider:before, #skewed .first-divider:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed .first-divider:before {
+      top: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 100% 0; }
+    #skewed .first-divider:after {
+      bottom: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%; }
   #skewed .second-divider {
+    position: relative;
+    z-index: 1;
     height: 300px !important;
     width: 100%;
     background-image: url(../img/second-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed .second-divider:before, #skewed .second-divider:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed .second-divider:before {
+      top: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 100% 0; }
+    #skewed .second-divider:after {
+      bottom: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%; }
   #skewed #how-block {
+    position: relative;
+    z-index: 1;
     background-image: url(../img/how-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #how-block:before, #skewed #how-block:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #how-block:before {
+      top: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 0 0; }
+    #skewed #how-block:after {
+      bottom: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 0 0; }
     #skewed #how-block .main-title {
       padding-top: 50px; }
     #skewed #how-block .how-text {
@@ -90,9 +186,29 @@ body {
       color: white;
       font-size: 1vw; }
   #skewed #what-block {
+    position: relative;
+    z-index: 1;
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #what-block:before, #skewed #what-block:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #what-block:before {
+      top: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 0 0; }
+    #skewed #what-block:after {
+      bottom: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 0 0; }
     #skewed #what-block .main-title {
       padding-top: 40px; }
     #skewed #what-block .what-text {
@@ -110,9 +226,29 @@ body {
       color: white;
       font-size: 1vw; }
   #skewed #analysis-block {
+    position: relative;
+    z-index: 1;
     background-image: url(../img/analysis-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #analysis-block:before, #skewed #analysis-block:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #analysis-block:before {
+      top: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 100% 0; }
+    #skewed #analysis-block:after {
+      bottom: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%; }
     #skewed #analysis-block #analysis-list .list-head {
       margin-top: 30px;
       font-weight: bold;
@@ -124,9 +260,29 @@ body {
         font-weight: 200;
         text-align: right; }
   #skewed #services-block {
+    position: relative;
+    z-index: 1;
     background-image: url(../img/our-services-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #services-block:before, #skewed #services-block:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #services-block:before {
+      top: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 0 0; }
+    #skewed #services-block:after {
+      bottom: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 0 0; }
     #skewed #services-block .main-title {
       padding-top: 90px; }
     #skewed #services-block ul {
@@ -144,10 +300,30 @@ body {
       #skewed #services-block .services-text .thinner-text {
         font-weight: 100; }
   #skewed #contact-block {
+    position: relative;
+    z-index: 1;
     height: 475px !important;
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    #skewed #contact-block:before, #skewed #contact-block:after {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #contact-block:before {
+      top: 0;
+      transform: skewY(1.5deg);
+      transform-origin: 100% 0; }
+    #skewed #contact-block:after {
+      bottom: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 100%; }
     #skewed #contact-block .main-title {
       padding-top: 40px; }
     #skewed #contact-block .contact-text {
@@ -164,9 +340,25 @@ body {
       color: white;
       font-size: 1vw; }
   #skewed #footer-block #first-footer {
+    position: relative;
+    z-index: 1;
     height: 250px !important;
     background-color: #BDBDBD;
     color: white; }
+    #skewed #footer-block #first-footer:before {
+      background: inherit;
+      content: '';
+      display: block;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      -webkit-backface-visibility: hidden; }
+    #skewed #footer-block #first-footer:before {
+      top: 0;
+      transform: skewY(-1.5deg);
+      transform-origin: 0 0; }
   #skewed #footer-block #second-footer {
     height: 45px !important;
     background-color: #424242;
