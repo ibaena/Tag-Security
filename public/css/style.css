@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'bebasBold';
+  src: url("/public/assets/BebasNeueBold.ttf"); }
+
+@font-face {
+  font-family: 'bebasBook';
+  src: url("/public/assets/BebasNeue Book.ttf"); }
+
+@font-face {
+  font-family: 'bebasLight';
+  src: url("/public/assets/BebasNeue Light.ttf"); }
+
+@font-face {
+  font-family: 'bebasRegular';
+  src: url("/public/assets/BebasNeue Regular.ttf"); }
+
+@font-face {
+  font-family: 'bebasThin';
+  src: url("/public/assets/BebasNeue Thin.ttf"); }
+
+/*Kenyan Font*/
+@font-face {
+  font-family: 'kenyanBold';
+  src: url("/public/assets/kenyan coffee bd.ttf"); }
+
+@font-face {
+  font-family: 'kenyanRegular';
+  src: url("/public/assets/kenyan coffee rg.ttf"); }
+
 html body {
   height: 100%;
   width: 100%; }
@@ -26,43 +55,32 @@ body {
     height: 500px;
     width: 100%; }
   #skewed #header {
-    position: relative;
-    z-index: 1;
     height: 625px !important;
     background-image: url(../img/header-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-    #skewed #header:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    #skewed #header:after {
-      bottom: 0;
-      transform: skewY(-1.5deg);
-      transform-origin: 100%; }
-    #skewed #header section .logo-wrapper #brand-logo {
+    #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
       display: block;
       margin: 0 auto;
       padding-top: 30px;
       width: 100%;
       height: auto;
-      max-width: 450px;
-      border-radius: 50%; }
-    #skewed #header section #header-title {
+      max-width: 450px; }
+    #skewed #header .header-wrapper section #header-title {
       margin-top: 20px;
-      font-size: 2.5vw; }
+      font-size: 2.5vw;
+      font-family: 'kenyanBold' !important; }
   #skewed #why-exist-block {
+    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
     position: relative;
     z-index: 1;
-    background-image: url(../img/what-we-offer-bg.png) !important;
+    /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;*/ }
     #skewed #why-exist-block:before, #skewed #why-exist-block:after {
       background: inherit;
       content: '';
@@ -81,78 +99,43 @@ body {
       bottom: 0;
       transform: skewY(1.5deg);
       transform-origin: 0 0; }
-    #skewed #why-exist-block .main-title {
+    #skewed #why-exist-block .why-wrapper .main-title {
       padding-top: 40px; }
-    #skewed #why-exist-block .why-text {
+    #skewed #why-exist-block .why-wrapper .why-text {
       color: white;
       font-size: 4vw; }
-      #skewed #why-exist-block .why-text .bold-text {
+      #skewed #why-exist-block .why-wrapper .why-text .bold-text {
         font-weight: 400; }
-      #skewed #why-exist-block .why-text .thin-text {
+      #skewed #why-exist-block .why-wrapper .why-text .thin-text {
         font-weight: 200; }
-      #skewed #why-exist-block .why-text .thinner-text {
+      #skewed #why-exist-block .why-wrapper .why-text .thinner-text {
         font-weight: 100; }
-    #skewed #why-exist-block #why-sub-text {
+    #skewed #why-exist-block .why-wrapper #why-sub-text {
       color: white;
       font-size: 1vw; }
   #skewed .first-divider {
-    position: relative;
-    z-index: 1;
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-    #skewed .first-divider:before, #skewed .first-divider:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    #skewed .first-divider:before {
-      top: 0;
-      transform: skewY(1.5deg);
-      transform-origin: 100% 0; }
-    #skewed .first-divider:after {
-      bottom: 0;
-      transform: skewY(-1.5deg);
-      transform-origin: 100%; }
   #skewed .second-divider {
-    position: relative;
-    z-index: 1;
     height: 300px !important;
     width: 100%;
     background-image: url(../img/second-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-    #skewed .second-divider:before, #skewed .second-divider:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    #skewed .second-divider:before {
-      top: 0;
-      transform: skewY(1.5deg);
-      transform-origin: 100% 0; }
-    #skewed .second-divider:after {
-      bottom: 0;
-      transform: skewY(-1.5deg);
-      transform-origin: 100%; }
   #skewed #how-block {
+    background-image: -webkit-gradient(linear, 0 0, 960.5 0, color-stop(0.019, #0097f1), color-stop(0.271, #00a1f1), to(#00b3f1));
+    background-image: -webkit-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    background-image: -moz-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    background-image: -o-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    background-image: linear-gradient(90deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
     position: relative;
     z-index: 1;
-    background-image: url(../img/how-bg.png) !important;
+    /*background-image: url(../img/how-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;*/ }
     #skewed #how-block:before, #skewed #how-block:after {
       background: inherit;
       content: '';
@@ -186,11 +169,16 @@ body {
       color: white;
       font-size: 1vw; }
   #skewed #what-block {
+    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
     position: relative;
     z-index: 1;
-    background-image: url(../img/what-we-offer-bg.png) !important;
+    /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;*/ }
     #skewed #what-block:before, #skewed #what-block:after {
       background: inherit;
       content: '';
@@ -226,29 +214,9 @@ body {
       color: white;
       font-size: 1vw; }
   #skewed #analysis-block {
-    position: relative;
-    z-index: 1;
     background-image: url(../img/analysis-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-    #skewed #analysis-block:before, #skewed #analysis-block:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    #skewed #analysis-block:before {
-      top: 0;
-      transform: skewY(1.5deg);
-      transform-origin: 100% 0; }
-    #skewed #analysis-block:after {
-      bottom: 0;
-      transform: skewY(-1.5deg);
-      transform-origin: 100%; }
     #skewed #analysis-block #analysis-list .list-head {
       margin-top: 30px;
       font-weight: bold;
@@ -300,12 +268,17 @@ body {
       #skewed #services-block .services-text .thinner-text {
         font-weight: 100; }
   #skewed #contact-block {
+    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
     position: relative;
     z-index: 1;
     height: 475px !important;
-    background-image: url(../img/what-we-offer-bg.png) !important;
+    /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;*/ }
     #skewed #contact-block:before, #skewed #contact-block:after {
       background: inherit;
       content: '';

@@ -1,4 +1,5 @@
 @import 'angle';
+@import 'fonts';
 
 //Page Sizing and Margins
 html body{
@@ -7,6 +8,7 @@ html body{
 }
 body{
   margin: 0 auto;
+
 }
 
 //Skewed DIV section
@@ -29,12 +31,11 @@ body{
   //Header Content Styles
   /*Header Content Styles*/
   #header{
-    @include angle(after);
     height: 625px !important;
     background-image: url(../img/header-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    .header-wrapper{
       section{
         .logo-wrapper{
           #brand-logo{
@@ -44,23 +45,32 @@ body{
             width: 100%;
             height: auto;
             max-width: 450px;
-            border-radius: 50%;
           }
         }
         #header-title{
           margin-top: 20px;
           font-size: 2.5vw;
+          font-family: 'kenyanBold' !important;
         }
       }
+    }
   }
 
   //Why Content Styles
   /*Why Content Styles*/
   #why-exist-block{
+    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
     @include angle(both, true);
-    background-image: url(../img/what-we-offer-bg.png) !important;
+
+    /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+
+    .why-wrapper{
       .main-title{
       padding-top: 40px;
       }
@@ -81,12 +91,12 @@ body{
         color: white;
         font-size: 1vw;
       }
+    }
   }
 
   //Divider Styles
   /*Divider Styles*/
   .first-divider{
-    @include angle(both);
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
@@ -94,7 +104,6 @@ body{
     background-repeat: no-repeat;
   }
   .second-divider{
-    @include angle(both);
     height: 300px !important;
     width: 100%;
     background-image: url(../img/second-divider.png) !important;
@@ -105,10 +114,15 @@ body{
   //How Content Styles
   /*How Content Styles*/
   #how-block{
-    @include angle(both, true);
-    background-image: url(../img/how-bg.png) !important;
+    background-image: -webkit-gradient(linear, 0 0, 960.5 0, color-stop(0.019, #0097f1), color-stop(0.271, #00a1f1), to(#00b3f1));
+    background-image: -webkit-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    background-image: -moz-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    background-image: -o-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    background-image: linear-gradient(90deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+    @include angle(both, after);
+    /*background-image: url(../img/how-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
       .main-title{
         padding-top: 50px;
       }
@@ -134,10 +148,16 @@ body{
   //What Do We Offer Content Styles
   /*What Do We Offer Content Styles*/
   #what-block{
+    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
     @include angle(both, true);
-    background-image: url(../img/what-we-offer-bg.png) !important;
+
+    /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
       .main-title{
         padding-top: 40px;
       }
@@ -166,7 +186,7 @@ body{
   //What Do We Offer Content Styles
   /*What Do We Offer Content Styles*/
   #analysis-block{
-    @include angle(both);
+
     background-image: url(../img/analysis-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -221,11 +241,17 @@ body{
   //Contact Styles
   /*Contact Styles*/
   #contact-block{
+    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
     @include angle(both);
+
     height: 475px !important;
-    background-image: url(../img/what-we-offer-bg.png) !important;
+    /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
       .main-title{
         padding-top: 40px;
       }
