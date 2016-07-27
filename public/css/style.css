@@ -10,7 +10,10 @@ body {
   /*Why Content Styles*/
   /*Divider Styles*/
   /*How Content Styles*/
-  /*What Do We Offer Content Styles*/ }
+  /*What Do We Offer Content Styles*/
+  /*What Do We Offer Content Styles*/
+  /*Services Offer Content Styles*/
+  /*How Content Styles*/ }
   #skewed nav {
     float: right;
     margin-right: 20px;
@@ -53,10 +56,16 @@ body {
     #skewed #why-exist-block #why-sub-text {
       color: white;
       font-size: 1vw; }
-  #skewed .dividers {
+  #skewed .first-divider {
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+  #skewed .second-divider {
+    height: 300px !important;
+    width: 100%;
+    background-image: url(../img/second-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
   #skewed #how-block {
@@ -95,5 +104,59 @@ body {
       #skewed #what-block .what-text hr {
         margin-right: 110px; }
     #skewed #what-block #what-sub-text {
+      color: white;
+      font-size: 1vw; }
+  #skewed #analysis-block {
+    background-image: url(../img/analysis-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #analysis-block #analysis-list .list-head {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #0D47A1;
+      font-size: 1vw; }
+      #skewed #analysis-block #analysis-list .list-head .list-description {
+        color: white;
+        font-size: 1.3vw;
+        font-weight: 200;
+        text-align: right; }
+  #skewed #services-block {
+    background-image: url(../img/our-services-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #services-block .main-title {
+      padding-top: 90px; }
+    #skewed #services-block ul {
+      margin-top: 30px; }
+      #skewed #services-block ul .services-list {
+        margin-bottom: 20px;
+        color: #0D47A1;
+        font-weight: 500 !important;
+        font-size: 1vw; }
+    #skewed #services-block .services-text {
+      color: #0D47A1;
+      font-size: 5.8vw; }
+      #skewed #services-block .services-text .thin-text {
+        font-weight: 200; }
+      #skewed #services-block .services-text .thinner-text {
+        font-weight: 100; }
+  #skewed #contact-block {
+    height: 600px !important;
+    background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #contact-block .main-title {
+      padding-top: 40px; }
+    #skewed #contact-block .contact-text {
+      color: white;
+      font-size: 5vw;
+      text-align: right !important; }
+      #skewed #contact-block .contact-text .thin-text {
+        font-weight: 200;
+        font-size: 6vw !important;
+        line-height: 1; }
+      #skewed #contact-block .contact-text .thinner-text {
+        font-weight: 100; }
+    #skewed #contact-block #contact-sub-text {
       color: white;
       font-size: 1vw; }

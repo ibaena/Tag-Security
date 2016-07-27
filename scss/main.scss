@@ -77,10 +77,17 @@ body{
 
   //Divider Styles
   /*Divider Styles*/
-  .dividers{
+  .first-divider{
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .second-divider{
+    height: 300px !important;
+    width: 100%;
+    background-image: url(../img/second-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -139,6 +146,89 @@ body{
         }
       }
       #what-sub-text{
+        color: white;
+        font-size: 1vw;
+      }
+  }
+
+  //What Do We Offer Content Styles
+  /*What Do We Offer Content Styles*/
+  #analysis-block{
+    background-image: url(../img/analysis-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      #analysis-list{
+        .list-head{
+          margin-top: 30px;
+          font-weight: bold;
+          color: #0D47A1;
+          font-size: 1vw;
+            .list-description{
+              color: white;
+              font-size: 1.3vw;
+              font-weight: 200;
+              text-align: right;
+            }
+        }
+      }
+  }
+
+  //Services Offer Content Styles
+  /*Services Offer Content Styles*/
+  #services-block{
+    background-image: url(../img/our-services-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      .main-title{
+        padding-top: 90px;
+      }
+      ul{
+        margin-top: 30px;
+        .services-list{
+          margin-bottom: 20px;
+          color: #0D47A1;
+          font-weight: 500 !important;
+          font-size: 1vw;
+        }
+      }
+      .services-text{
+        color: #0D47A1;
+        font-size: 5.8vw;
+
+        .thin-text{
+          font-weight: 200;
+        }
+        .thinner-text{
+          font-weight: 100;
+        }
+      }
+  }
+
+  //How Content Styles
+  /*How Content Styles*/
+  #contact-block{
+    height: 600px !important;
+    background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      .main-title{
+        padding-top: 40px;
+      }
+      .contact-text{
+        color: white;
+        font-size: 5vw;
+        text-align: right !important;
+
+        .thin-text{
+          font-weight: 200;
+          font-size: 6vw !important;
+          line-height: 1;
+        }
+        .thinner-text{
+          font-weight: 100;
+        }
+      }
+      #contact-sub-text{
         color: white;
         font-size: 1vw;
       }
