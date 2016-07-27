@@ -17,15 +17,16 @@ body {
   /*Footer Content Styles*/ }
   #skewed nav {
     float: right;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-top: 20px; }
     #skewed nav i {
-      color: #0D47A1; }
+      color: #0D47A1;
+      font-size: 2.3vw; }
   #skewed .content-block {
     height: 500px;
     width: 100%; }
   #skewed #header {
-    height: 550px !important;
+    height: 625px !important;
     background-image: url(../img/header-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
@@ -33,18 +34,19 @@ body {
       display: block;
       margin: 0 auto;
       padding-top: 30px;
-      width: 350px;
+      width: 450px;
       height: auto;
-      max-width: 100%; }
+      max-width: 100%;
+      border-radius: 50%; }
     #skewed #header section #header-title {
       margin-top: 20px;
-      font-size: 4vw; }
+      font-size: 2.5vw; }
   #skewed #why-exist-block {
     background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     #skewed #why-exist-block .main-title {
-      padding-top: 50px; }
+      padding-top: 40px; }
     #skewed #why-exist-block .why-text {
       color: white;
       font-size: 4vw; }
@@ -74,7 +76,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     #skewed #how-block .main-title {
-      padding-top: 70px; }
+      padding-top: 50px; }
     #skewed #how-block .how-text {
       color: white;
       font-size: 4vw; }
@@ -92,7 +94,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     #skewed #what-block .main-title {
-      padding-top: 70px; }
+      padding-top: 40px; }
     #skewed #what-block .what-text {
       color: white;
       font-size: 4vw; }
@@ -163,7 +165,9 @@ body {
       font-size: 1vw; }
   #skewed #footer-block #first-footer {
     height: 250px !important;
-    background-color: #757575; }
+    background-color: #BDBDBD;
+    color: white; }
   #skewed #footer-block #second-footer {
     height: 45px !important;
-    background-color: #212121; }
+    background-color: #424242;
+    color: white; }
