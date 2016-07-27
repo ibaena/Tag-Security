@@ -67,9 +67,10 @@ body {
       height: auto;
       max-width: 450px; }
     #skewed #header .header-wrapper section #header-title {
-      margin-top: 20px;
-      font-size: 2.5vw;
-      font-family: 'kenyanBold' !important; }
+      text-align: center;
+      font-size: 3.5vw;
+      font-family: 'kenyanRegular' !important;
+      padding-bottom: 10px; }
   #skewed #why-exist-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -99,20 +100,28 @@ body {
       bottom: 0;
       transform: skewY(1.5deg);
       transform-origin: 0 0; }
-    #skewed #why-exist-block .why-wrapper .main-title {
+    #skewed #why-exist-block .main-title {
       padding-top: 40px; }
-    #skewed #why-exist-block .why-wrapper .why-text {
+    #skewed #why-exist-block .why-text {
       color: white;
-      font-size: 4vw; }
-      #skewed #why-exist-block .why-wrapper .why-text .bold-text {
-        font-weight: 400; }
-      #skewed #why-exist-block .why-wrapper .why-text .thin-text {
-        font-weight: 200; }
-      #skewed #why-exist-block .why-wrapper .why-text .thinner-text {
-        font-weight: 100; }
-    #skewed #why-exist-block .why-wrapper #why-sub-text {
-      color: white;
-      font-size: 1vw; }
+      font-size: 8vw;
+      line-height: 5.2vw; }
+      #skewed #why-exist-block .why-text .bold-text {
+        font-weight: 400;
+        font-family: 'bebasBold'; }
+      #skewed #why-exist-block .why-text .thin-text {
+        font-weight: 200;
+        font-family: 'bebaslight'; }
+      #skewed #why-exist-block .why-text .thinner-text {
+        font-weight: 100;
+        font-family: 'bebasThin'; }
+    #skewed #why-exist-block #why-sub-text {
+      width: 100%;
+      color: white !important;
+      font-size: 1.9vw !important;
+      font-family: 'bebasRegular' !important; }
+    #skewed #why-exist-block hr {
+      margin-right: 480px; }
   #skewed .first-divider {
     height: 300px !important;
     width: 100%;
@@ -155,19 +164,25 @@ body {
       transform: skewY(1.5deg);
       transform-origin: 0 0; }
     #skewed #how-block .main-title {
-      padding-top: 50px; }
+      padding-top: 30px; }
     #skewed #how-block .how-text {
       color: white;
-      font-size: 4vw; }
+      font-size: 8vw;
+      line-height: 5.2vw; }
       #skewed #how-block .how-text .bold-text {
-        font-weight: 400; }
+        font-weight: 400;
+        font-family: 'bebasBold'; }
       #skewed #how-block .how-text .thin-text {
-        font-weight: 200; }
+        font-weight: 200;
+        font-family: 'bebaslight'; }
       #skewed #how-block .how-text .thinner-text {
-        font-weight: 100; }
+        font-weight: 100;
+        font-family: 'bebasThin'; }
     #skewed #how-block #how-sub-text {
-      color: white;
-      font-size: 1vw; }
+      width: 100%;
+      color: white !important;
+      font-size: 1.8vw !important;
+      font-family: 'bebasRegular' !important; }
   #skewed #what-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -201,32 +216,41 @@ body {
       padding-top: 40px; }
     #skewed #what-block .what-text {
       color: white;
-      font-size: 4vw; }
+      font-size: 8vw;
+      line-height: 5.2vw; }
       #skewed #what-block .what-text .bold-text {
-        font-weight: 400; }
+        font-weight: 400;
+        font-family: 'bebasBold'; }
       #skewed #what-block .what-text .thin-text {
-        font-weight: 200; }
+        font-weight: 200;
+        font-family: 'bebaslight'; }
       #skewed #what-block .what-text .thinner-text {
-        font-weight: 100; }
+        font-weight: 100;
+        font-family: 'bebasThin'; }
       #skewed #what-block .what-text hr {
-        margin-right: 110px; }
+        margin-right: 80px; }
     #skewed #what-block #what-sub-text {
-      color: white;
-      font-size: 1vw; }
+      width: 100%;
+      color: white !important;
+      font-size: 1.8vw !important;
+      font-family: 'bebasRegular' !important; }
   #skewed #analysis-block {
     background-image: url(../img/analysis-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-    #skewed #analysis-block #analysis-list .list-head {
-      margin-top: 30px;
-      font-weight: bold;
-      color: #0D47A1;
-      font-size: 1vw; }
-      #skewed #analysis-block #analysis-list .list-head .list-description {
-        color: white;
-        font-size: 1.3vw;
-        font-weight: 200;
-        text-align: right; }
+    #skewed #analysis-block #analysis-list {
+      margin-top: 80px;
+      line-height: 0.5vw; }
+      #skewed #analysis-block #analysis-list .list-head {
+        font-family: 'bebasBold';
+        color: #0D47A1;
+        font-size: 1.5vw; }
+        #skewed #analysis-block #analysis-list .list-head .list-description {
+          color: white;
+          font-size: 2vw;
+          font-weight: 200;
+          text-align: right;
+          font-family: 'bebasLight' !important; }
   #skewed #services-block {
     position: relative;
     z-index: 1;
@@ -252,21 +276,21 @@ body {
       transform: skewY(1.5deg);
       transform-origin: 0 0; }
     #skewed #services-block .main-title {
-      padding-top: 90px; }
-    #skewed #services-block ul {
-      margin-top: 30px; }
-      #skewed #services-block ul .services-list {
-        margin-bottom: 20px;
-        color: #0D47A1;
-        font-weight: 500 !important;
-        font-size: 1vw; }
+      padding-top: 80px; }
+    #skewed #services-block ul .services-list {
+      margin-bottom: 15px;
+      text-align: right;
+      color: #0D47A1;
+      font-family: 'bebasRegular' !important;
+      font-size: 1.2vw; }
     #skewed #services-block .services-text {
       color: #0D47A1;
-      font-size: 5.8vw; }
+      font-size: 10.2vw;
+      line-height: 7.2vw; }
       #skewed #services-block .services-text .thin-text {
-        font-weight: 200; }
+        font-family: 'bebasRegular' !important; }
       #skewed #services-block .services-text .thinner-text {
-        font-weight: 100; }
+        font-family: 'bebasLight' !important; }
   #skewed #contact-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -298,20 +322,19 @@ body {
       transform: skewY(-1.5deg);
       transform-origin: 100%; }
     #skewed #contact-block .main-title {
-      padding-top: 40px; }
+      padding-top: 20px; }
     #skewed #contact-block .contact-text {
       color: white;
-      font-size: 5vw;
-      text-align: right !important; }
+      font-size: 10vw;
+      text-align: right !important;
+      line-height: 7.1vw; }
       #skewed #contact-block .contact-text .thin-text {
-        font-weight: 200;
-        font-size: 6vw !important;
-        line-height: 1; }
+        font-family: 'bebasLight' !important;
+        font-size: 10vw !important; }
       #skewed #contact-block .contact-text .thinner-text {
-        font-weight: 100; }
-    #skewed #contact-block #contact-sub-text {
-      color: white;
-      font-size: 1vw; }
+        font-family: 'bebasThin' !important; }
+    #skewed #contact-block #textarea {
+      float: none !important; }
   #skewed #footer-block #first-footer {
     position: relative;
     z-index: 1;
