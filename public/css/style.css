@@ -1,118 +1,99 @@
+html body {
+  height: 100%;
+  width: 100%; }
+
 body {
-  margin: 0; }
+  margin: 0 auto; }
 
-.block-header {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  background: black;
-  height: 700px !important; }
-  .block-header::before, .block-header::after {
-    content: '';
+#skewed {
+  /*Header Content Styles*/
+  /*Why Content Styles*/
+  /*Divider Styles*/
+  /*How Content Styles*/
+  /*What Do We Offer Content Styles*/ }
+  #skewed nav {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px; }
+    #skewed nav i {
+      color: #0D47A1; }
+  #skewed .content-block {
+    height: 500px;
+    width: 100%; }
+  #skewed #header {
+    height: 550px !important;
+    background-image: url(../img/header-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #header section .logo-wrapper #brand-logo {
+      display: block;
+      margin: 0 auto;
+      padding-top: 30px;
+      width: 350px;
+      height: auto;
+      max-width: 100%; }
+    #skewed #header section #header-title {
+      margin-top: 20px;
+      font-size: 4vw; }
+  #skewed #why-exist-block {
+    background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #why-exist-block .main-title {
+      padding-top: 50px; }
+    #skewed #why-exist-block .why-text {
+      color: white;
+      font-size: 4vw; }
+      #skewed #why-exist-block .why-text .bold-text {
+        font-weight: 400; }
+      #skewed #why-exist-block .why-text .thin-text {
+        font-weight: 200; }
+      #skewed #why-exist-block .why-text .thinner-text {
+        font-weight: 100; }
+    #skewed #why-exist-block #why-sub-text {
+      color: white;
+      font-size: 1vw; }
+  #skewed .dividers {
+    height: 300px !important;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    transition: ease all .5s; }
-  .block-header::before {
-    top: 0;
-    transform-origin: right top;
-    transform: skewY(3deg); }
-  .block-header::after {
-    bottom: 0;
-    transform-origin: right bottom;
-    transform: skewY(-3deg); }
-
-.block-content-footer {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  background: grey;
-  height: 350px !important;
-  padding-bottom: 50px; }
-  .block-content-footer::before, .block-content-footer::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    transition: ease all .5s; }
-  .block-content-footer::before {
-    top: 0;
-    transform-origin: right top;
-    transform: skewY(3deg); }
-
-.block-content-even {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  padding-top: 95px;
-  background: green;
-  z-index: 1; }
-  .block-content-even::before, .block-content-even::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    transition: ease all .5s; }
-  .block-content-even::before {
-    top: 0;
-    transform-origin: left top;
-    transform: skewY(-3deg); }
-  .block-content-even::after {
-    bottom: 0;
-    transform-origin: left bottom;
-    transform: skewY(3deg); }
-
-.block-content-spacer {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  padding-top: 95px;
-  background: pink;
-  z-index: 1;
-  height: 275px !important; }
-  .block-content-spacer::before, .block-content-spacer::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    transition: ease all .5s; }
-  .block-content-spacer::before {
-    top: 0;
-    transform-origin: right top;
-    transform: skewY(3deg); }
-  .block-content-spacer::after {
-    bottom: 0;
-    transform-origin: right bottom;
-    transform: skewY(-3deg); }
-
-.block-content-odd {
-  height: 600px;
-  width: 100%;
-  position: relative;
-  padding-top: 95px;
-  background: black;
-  z-index: 1; }
-  .block-content-odd::before, .block-content-odd::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    transition: ease all .5s; }
-  .block-content-odd::before {
-    top: 0;
-    transform-origin: right top;
-    transform: skewY(3deg); }
-  .block-content-odd::after {
-    bottom: 0;
-    transform-origin: right bottom;
-    transform: skewY(-3deg); }
-
-.copy {
-  width: 100%;
-  background: blue;
-  height: 50px; }
+    background-image: url(../img/first-divider.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+  #skewed #how-block {
+    background-image: url(../img/how-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #how-block .main-title {
+      padding-top: 70px; }
+    #skewed #how-block .how-text {
+      color: white;
+      font-size: 4vw; }
+      #skewed #how-block .how-text .bold-text {
+        font-weight: 400; }
+      #skewed #how-block .how-text .thin-text {
+        font-weight: 200; }
+      #skewed #how-block .how-text .thinner-text {
+        font-weight: 100; }
+    #skewed #how-block #how-sub-text {
+      color: white;
+      font-size: 1vw; }
+  #skewed #what-block {
+    background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    #skewed #what-block .main-title {
+      padding-top: 70px; }
+    #skewed #what-block .what-text {
+      color: white;
+      font-size: 4vw; }
+      #skewed #what-block .what-text .bold-text {
+        font-weight: 400; }
+      #skewed #what-block .what-text .thin-text {
+        font-weight: 200; }
+      #skewed #what-block .what-text .thinner-text {
+        font-weight: 100; }
+      #skewed #what-block .what-text hr {
+        margin-right: 110px; }
+    #skewed #what-block #what-sub-text {
+      color: white;
+      font-size: 1vw; }

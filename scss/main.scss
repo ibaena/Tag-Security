@@ -1,7 +1,146 @@
-//Skewed DIV section
+//Page Sizing and Margins
+html body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin: 0 auto;
+}
 
+//Skewed DIV section
 #skewed{
+  nav{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    i{
+      color: #0D47A1;
+    }
+  }
+  .content-block{
+    height: 500px;
+    width: 100%;
+  }
+
+  //Header Content Styles
+  /*Header Content Styles*/
   #header{
-    background-image: url();
+    height: 550px !important;
+    background-image: url(../img/header-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      section{
+        .logo-wrapper{
+          #brand-logo{
+            display: block;
+            margin: 0 auto;
+            padding-top: 30px;
+            width: 350px;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+        #header-title{
+          margin-top: 20px;
+          font-size: 4vw;
+        }
+      }
+  }
+
+  //Why Content Styles
+  /*Why Content Styles*/
+  #why-exist-block{
+    background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      .main-title{
+      padding-top: 50px;
+      }
+      .why-text{
+        color: white;
+        font-size: 4vw;
+        .bold-text{
+          font-weight: 400;
+        }
+        .thin-text{
+          font-weight: 200;
+        }
+        .thinner-text{
+          font-weight: 100;
+        }
+      }
+      #why-sub-text{
+        color: white;
+        font-size: 1vw;
+      }
+  }
+
+  //Divider Styles
+  /*Divider Styles*/
+  .dividers{
+    height: 300px !important;
+    width: 100%;
+    background-image: url(../img/first-divider.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  //How Content Styles
+  /*How Content Styles*/
+  #how-block{
+    background-image: url(../img/how-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      .main-title{
+        padding-top: 70px;
+      }
+      .how-text{
+        color: white;
+        font-size: 4vw;
+        .bold-text{
+          font-weight: 400;
+        }
+        .thin-text{
+          font-weight: 200;
+        }
+        .thinner-text{
+          font-weight: 100;
+        }
+      }
+      #how-sub-text{
+        color: white;
+        font-size: 1vw;
+      }
+  }
+
+  //What Do We Offer Content Styles
+  /*What Do We Offer Content Styles*/
+  #what-block{
+    background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+      .main-title{
+        padding-top: 70px;
+      }
+      .what-text{
+        color: white;
+        font-size: 4vw;
+        .bold-text{
+          font-weight: 400;
+        }
+        .thin-text{
+          font-weight: 200;
+        }
+        .thinner-text{
+          font-weight: 100;
+        }
+        hr{
+          margin-right: 110px;
+        }
+      }
+      #what-sub-text{
+        color: white;
+        font-size: 1vw;
+      }
   }
 }
