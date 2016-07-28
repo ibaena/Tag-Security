@@ -47,10 +47,14 @@ $('#showEbook').on('click', function() {
     console.log(showEbook);
     if (showEbook === true) {
         $('.pop-out').removeClass('hidden');
+        $('#showEbook').removeClass('fa-plus-square-o');
         $('.pop-out').removeClass('animated slideOutRight');
+        $('#showEbook').addClass('fa-times');
         $('.pop-out').addClass('animated slideInRight');
     } else {
         $('.pop-out').removeClass('animated slideInRight');
+        $('#showEbook').removeClass('fa-times');
+        $('#showEbook').addClass('fa-plus-square-o');
         $('.pop-out').addClass('animated slideOutRight');
 
     }
