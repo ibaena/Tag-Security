@@ -373,3 +373,38 @@ nav {
     margin-right: 25px;
     color: #0D47A1;
     font-size: 2.4vw !important; }
+
+#showEbook {
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  right: 0.5%; }
+
+.pop-out {
+  z-index: 99;
+  position: fixed;
+  top: 50%;
+  right: 0.2%;
+  background-color: orange;
+  height: 300px;
+  width: 650px; }
+  .pop-out #ebook-ad {
+    display: inline-block;
+    width: 100%;
+    float: right;
+    font-size: 2.5vw !important; }
+    .pop-out #ebook-ad #ebook-img {
+      float: left;
+      margin-right: 30px; }
+    .pop-out #ebook-ad #ebook-text {
+      line-height: 2.5vw;
+      width: 100%;
+      color: white; }
+      .pop-out #ebook-ad #ebook-text #ebook-bold {
+        display: inline-block;
+        font-family: 'bebasBold' !important;
+        font-size: 2.7vw !important; }
+      .pop-out #ebook-ad #ebook-text #ebook-thin {
+        display: inline-block;
+        font-family: 'bebasLight' !important;
+        font-size: 2.7vw !important; }

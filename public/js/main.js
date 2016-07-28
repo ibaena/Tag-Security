@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     let showNav = false;
+    let showEbook = false;
 
 
     $('#menu-burger').on('click', function() {
@@ -13,7 +14,7 @@ $(document).ready(function() {
         } else {
             $('#tagNav').removeClass('animated slideInLeft');
             $('#tagNav').addClass('animated slideOutLeft');
-            
+
         }
 
     });
@@ -40,7 +41,21 @@ $(document).ready(function() {
         } // End if
     });
 
+//SHow ebook
+$('#showEbook').on('click', function() {
+    showEbook = !showEbook;
+    console.log(showEbook);
+    if (showEbook === true) {
+        $('.pop-out').removeClass('hidden');
+        $('.pop-out').removeClass('animated slideOutRight');
+        $('.pop-out').addClass('animated slideInRight');
+    } else {
+        $('.pop-out').removeClass('animated slideInRight');
+        $('.pop-out').addClass('animated slideOutRight');
 
+    }
+
+});
 
 
 });
