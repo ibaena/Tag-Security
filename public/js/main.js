@@ -83,7 +83,7 @@ if (scrollTop > stickyNavTop) {
     $('.nav').removeClass('slideInDown');
     $('.nav').addClass('slideInUp');
 
-    showNav = !showNav;
+    showNav = false;
     if (showNav === false) {
         $('#tagNav').removeClass('animated slideInLeft');
         $('#tagNav').addClass('animated slideOutLeft');
