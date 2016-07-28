@@ -79,7 +79,7 @@ if (scrollTop > stickyNavTop) {
         $('#tagNav').addClass('animated slideInLeft');
       //menu-burger
         $('#menu-burger').removeClass('fadeIn');
-        $('#menu-burger').addClass('animated slideInRight');
+        $('#menu-burger').addClass('animated fadeOut');
     }
 
 } else {
@@ -87,13 +87,13 @@ if (scrollTop > stickyNavTop) {
     $('.nav').removeClass('slideInDown');
     $('.nav').addClass('slideInUp');
 
-    showNav = false;
+    showNav = !showNav;
     if (showNav === false) {
         $('#tagNav').removeClass('animated slideInLeft');
         $('#tagNav').addClass('animated fadeOut');
 
         //menu-burger
-        $('#menu-burger').removeClass('slideInRight');
+        $('#menu-burger').removeClass('fadeOut');
         $('#menu-burger').addClass('fadeIn');
 
     }

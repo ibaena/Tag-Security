@@ -345,7 +345,7 @@ nav{
   position: fixed;
   z-index: 999;
   #tagNav{
-    margin-left: 10px;
+    margin-left: 20px;
     position: relative;
     z-index: 99;
     margin-top: 25px;
@@ -355,9 +355,11 @@ nav{
       li{
         a{
           color: #0a1ea4;
+          font-family: 'bebasRegular' !important;
+          font-size: 1.3vw;
         }
         a:hover{
-          background-color: #0a1ea4;
+          background-color: rgba(10, 30, 164, .5);
           color: white;
           border-radius: 10px;
         }
@@ -370,6 +372,7 @@ nav{
     color: #0D47A1;
     font-size: 2.4vw !important;
   }
+  
 }
 
 //Ebook Styles

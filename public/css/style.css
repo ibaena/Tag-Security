@@ -378,16 +378,18 @@ nav {
   position: fixed;
   z-index: 999; }
   nav #tagNav {
-    margin-left: 10px;
+    margin-left: 20px;
     position: relative;
     z-index: 99;
     margin-top: 25px;
     display: inline-block;
     font-size: 1.1vw; }
     nav #tagNav li a {
-      color: #0a1ea4; }
+      color: #0a1ea4;
+      font-family: 'bebasRegular' !important;
+      font-size: 1.3vw; }
     nav #tagNav li a:hover {
-      background-color: #0a1ea4;
+      background-color: rgba(10, 30, 164, 0.5);
       color: white;
       border-radius: 10px; }
   nav #menu-burger {
