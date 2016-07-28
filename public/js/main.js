@@ -73,9 +73,13 @@ if (scrollTop > stickyNavTop) {
 
     showNav = !showNav;
     if (showNav === true) {
+      //links
         $('#tagNav').removeClass('hidden');
-        $('#tagNav').removeClass('animated slideOutLeft');
+        $('#tagNav').removeClass('animated fadeOut');
         $('#tagNav').addClass('animated slideInLeft');
+      //menu-burger
+        $('#menu-burger').removeClass('fadeIn');
+        $('#menu-burger').addClass('animated slideInRight');
     }
 
 } else {
@@ -86,7 +90,11 @@ if (scrollTop > stickyNavTop) {
     showNav = false;
     if (showNav === false) {
         $('#tagNav').removeClass('animated slideInLeft');
-        $('#tagNav').addClass('animated slideOutLeft');
+        $('#tagNav').addClass('animated fadeOut');
+
+        //menu-burger
+        $('#menu-burger').removeClass('slideInRight');
+        $('#menu-burger').addClass('fadeIn');
 
     }
 
