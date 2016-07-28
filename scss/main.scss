@@ -11,19 +11,10 @@ body{
 
 }
 
-.hidden { display: none; }
+.hidden { display: none !important; }
 
 //Skewed DIV section
 #skewed{
-  nav{
-    float: right;
-    margin-right: 30px;
-    margin-top: 20px;
-    i{
-      color: #0D47A1;
-      font-size: 2.3vw;
-    }
-  }
   .content-block{
     height: 500px;
     width: 100%;
@@ -38,9 +29,6 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     .header-wrapper{
-      ul{
-        
-      }
       section{
         .logo-wrapper{
           #brand-logo{
@@ -323,5 +311,28 @@ body{
       background-color: #424242;
       color: white;
     }
+  }
+}
+
+//NAV Styles
+/*Nav Styles */
+
+nav{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  #tagNav{
+    position: relative;
+    z-index: 99;
+    margin-top: 25px;
+    display: inline-block;
+    font-size: 1.1vw;
+  }
+  #menu-burger{
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    color: #0D47A1;
+    font-size: 2.4vw !important;
   }
 }
