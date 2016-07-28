@@ -322,11 +322,25 @@ nav{
   position: fixed;
   z-index: 999;
   #tagNav{
+    margin-left: 10px;
     position: relative;
     z-index: 99;
     margin-top: 25px;
     display: inline-block;
     font-size: 1.1vw;
+    background-color: rgba(33, 33, 33, .3);
+    opacity: .8;
+    border-radius: 8px;
+      li{
+        a{
+          color: #0a1ea4;
+        }
+        a:hover{
+          background-color: #0a1ea4;
+          color: white;
+          border-radius: 10px;
+        }
+      }
   }
   #menu-burger{
     float: right;
@@ -352,14 +366,16 @@ nav{
   background-color: orange;
   height: 300px;
   display: inline-block;
+  border-radius: 5px;
     #ebook-ad{
       width: 100%;
       float: right;
       font-size: 2.5vw !important;
-      margin-top: 30px;
+      margin-top: 40px;
         #ebook-img{
           float: left;
           margin-right: 30px;
+          margin-left: 15px;
         }
         #ebook-text{
           line-height: 2.5vw;
