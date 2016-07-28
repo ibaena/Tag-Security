@@ -341,7 +341,7 @@ nav{
 #showEbook{
   z-index: 999;
   position: fixed;
-  top: 50%;
+  top: 50.5%;
   right: 0.5%;
 }
 .pop-out{
@@ -351,13 +351,12 @@ nav{
   right: 0.2%;
   background-color: orange;
   height: 300px;
-  width: 650px;
-
+  display: inline-block;
     #ebook-ad{
-      display: inline-block;
       width: 100%;
       float: right;
       font-size: 2.5vw !important;
+      margin-top: 30px;
         #ebook-img{
           float: left;
           margin-right: 30px;
@@ -376,6 +375,15 @@ nav{
             display: inline-block;
             font-family: 'bebasLight' !important;
             font-size: 2.7vw !important;
+          }
+          #ebook-regular{
+            display: inline-block;
+            font-family: 'bebasRegular' !important;
+            font-size: 1.7vw !important;
+          }
+          #ebook-small{
+            font-family: 'bebasRegular' !important;
+            font-size: 1.2vw !important;
           }
         }
     }
