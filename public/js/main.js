@@ -47,18 +47,55 @@ $('#showEbook').on('click', function() {
     console.log(showEbook);
     if (showEbook === true) {
         $('.pop-out').removeClass('hidden');
-        $('#showEbook').removeClass('fa-plus-square-o');
+        $('#showEbook').removeClass('fa-arrow-circle-o-left');
         $('.pop-out').removeClass('animated slideOutRight');
         $('#showEbook').addClass('fa-times');
         $('.pop-out').addClass('animated slideInRight');
     } else {
         $('.pop-out').removeClass('animated slideInRight');
         $('#showEbook').removeClass('fa-times');
-        $('#showEbook').addClass('fa-plus-square-o');
+        $('#showEbook').addClass('fa-arrow-circle-o-left');
         $('.pop-out').addClass('animated slideOutRight');
 
     }
+});
 
+//Sticky Nav on scroll
+let stickyNavTop = $('#header-title').offset().top;
+
+let stickyNav = function(){
+let scrollTop = $(window).scrollTop();
+
+if (scrollTop > stickyNavTop) {
+    $('.nav').addClass('sticky');
+    $('.nav').addClass('animated slideInDown');
+    $('.nav').removeClass('slideInUp');
+
+    showNav = true;
+    if (showNav === true) {
+        $('#tagNav').removeClass('hidden');
+        $('#tagNav').removeClass('animated slideOutLeft');
+        $('#tagNav').addClass('animated slideInLeft');
+    } else {
+        $('#tagNav').removeClass('animated slideInLeft');
+        $('#tagNav').addClass('animated slideOutLeft');
+
+    }
+
+} else {
+    $('.nav').removeClass('sticky');
+    $('.nav').removeClass('slideInDown');
+    $('.nav').addClass('slideInUp');
+
+
+
+}
+};
+
+stickyNav();
+
+$(window).scroll(function() {
+  stickyNav();
 });
 
 
