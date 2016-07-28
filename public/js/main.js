@@ -71,15 +71,11 @@ if (scrollTop > stickyNavTop) {
     $('.nav').addClass('animated slideInDown');
     $('.nav').removeClass('slideInUp');
 
-    showNav = true;
+    showNav = !showNav;
     if (showNav === true) {
         $('#tagNav').removeClass('hidden');
         $('#tagNav').removeClass('animated slideOutLeft');
         $('#tagNav').addClass('animated slideInLeft');
-    } else {
-        $('#tagNav').removeClass('animated slideInLeft');
-        $('#tagNav').addClass('animated slideOutLeft');
-
     }
 
 } else {
@@ -87,6 +83,12 @@ if (scrollTop > stickyNavTop) {
     $('.nav').removeClass('slideInDown');
     $('.nav').addClass('slideInUp');
 
+    showNav = !showNav;
+    if (showNav === false) {
+        $('#tagNav').removeClass('animated slideInLeft');
+        $('#tagNav').addClass('animated slideOutLeft');
+
+    }
 
 
 }
