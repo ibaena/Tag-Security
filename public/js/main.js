@@ -11,9 +11,9 @@ $(document).ready(function() {
             $('#tagNav').removeClass('animated slideOutLeft');
             $('#tagNav').addClass('animated slideInLeft');
         } else {
-            $('#tagNav').removeClass('animated slideInRight');
+            $('#tagNav').removeClass('animated slideInLeft');
             $('#tagNav').addClass('animated slideOutLeft');
-            $('#tagNav').addClass('hidden');
+            
         }
 
     });
