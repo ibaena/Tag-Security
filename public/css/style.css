@@ -58,11 +58,11 @@ body {
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
       #skewed #header {
-        height: 100% !important;
+        height: 100vh !important;
         width: 100%; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       #skewed #header {
-        height: 100% !important;
+        height: 100vh !important;
         width: 100%; } }
     @media (min-width: 1024px) and (max-width: 1439px) {
       #skewed #header {
@@ -72,12 +72,18 @@ body {
       #skewed #header {
         height: 100vh !important;
         width: 100%; } }
+    @media (max-width: 425px) {
+      #skewed #header .header-wrapper section {
+        padding-top: 120px; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #header .header-wrapper section {
+        padding-top: 130px; } }
     @media (min-width: 1024px) and (max-width: 1439px) {
       #skewed #header .header-wrapper section {
-        padding-top: 170px; } }
+        padding-top: 0; } }
     @media (min-width: 1440px) and (max-width: 2559px) {
       #skewed #header .header-wrapper section {
-        padding-top: 180px; } }
+        padding-bottom: 30px; } }
     #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
       display: block;
       margin: 0 auto;
@@ -139,13 +145,13 @@ body {
           text-align: center;
           font-size: 5.5vw;
           font-family: 'kenyanRegular' !important;
-          padding-bottom: 20px; } }
+          padding-bottom: 40px; } }
       @media (min-width: 1440px) and (max-width: 2559px) {
         #skewed #header .header-wrapper section #header-title {
           text-align: center;
           font-size: 5.5vw;
           font-family: 'kenyanRegular' !important;
-          padding-bottom: 20px; } }
+          padding-bottom: 40px; } }
   #skewed #why-exist-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
