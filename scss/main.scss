@@ -479,6 +479,14 @@ body{
   //Contact Styles
   /*Contact Styles*/
   #contact-block{
+    @include mobile {
+      height: 100% !important;
+      width: 100% !important;
+    }
+    @include tablet {
+      height: 100% !important;
+      width: 100% !important;
+    }
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
     background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -491,15 +499,39 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;*/
       .main-title{
+        @include mobile {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+        @include tablet {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
         padding-top: 20px;
       }
       .contact-text{
+        @include mobile {
+          font-size: 15vw;
+          text-align: center !important;
+          line-height: 33px;
+        }
+        @include tablet {
+          font-size: 15vw;
+          text-align: center !important;
+          line-height: 57px;
+        }
         color: white;
         font-size: 10vw;
         text-align: right !important;
         line-height: 7.1vw;
 
         .thin-text{
+          @include mobile {
+            font-size: 17vw;
+          }
+          @include tablet {
+            font-size: 17vw;
+          }
           font-family: 'bebasLight' !important;
           font-size: 10vw !important;
 
@@ -516,8 +548,17 @@ body{
   //Footer Content Styles
   /*Footer Content Styles*/
   #footer-block{
+    @include mobile {
+      height: 100% !important;
+      width: 100% !important;
+    }
+    @include tablet {
+      height: 100% !important;
+      width: 100% !important;
+    }
   text-align: center;
     #first-footer{
+
       @include angle(before, true);
       height: 250px !important;
       background-color: #BDBDBD;
@@ -526,6 +567,17 @@ body{
       font-size: 1.2vw;
 
         #footer-logo{
+          @include mobile {
+            display: block;
+            margin: 0 auto;
+            float: none !important;
+
+          }
+          @include tablet {
+            display: block;
+            margin: 0 auto;
+            float: none !important;
+          }
           display: block;
           margin: 0 auto;
           padding-top: 10px;
@@ -533,7 +585,17 @@ body{
         }
         #footer-caption-box{
           margin-top: 20px;
-          #footer-caption{
+          @include tablet {
+            margin-top: 0;
+          }
+          #footer-caption-text{
+            @include mobile {
+              font-size: 2.4vw;
+            }
+            @include tablet {
+              font-size: 2.4vw;
+              margin-bottom: 20px;
+            }
           }
         }
     }
@@ -542,9 +604,17 @@ body{
       background-color: #424242;
       color: white;
       #footerCopy{
+        display: inline;
         text-align: center;
         display: inline-block;
           .footerText{
+            @include mobile {
+              font-size: 1.7vw;
+            }
+            @include tablet {
+              font-size: 1.7vw;
+            }
+            display: inline-block;
             a{
               color: white;
             }
@@ -614,9 +684,16 @@ nav{
   display: inline-block;
   border-radius: 5px;
     #ebook-ad{
+      @include mobile {
+        width: 350px !important;
+
+      }
+      @include tablet {
+        width: 480px !important;
+      }
       width: 100%;
       float: right;
-      font-size: 2.5vw !important;
+      font-size: 2.5vw;
       margin-top: 40px;
         #ebook-img{
           float: left;
@@ -624,26 +701,61 @@ nav{
           margin-left: 15px;
         }
         #ebook-text{
+          @include mobile {
+            line-height: 3.9vw;
+
+          }
+          @include tablet {
+            line-height: 3.9vw;
+          }
           line-height: 2.5vw;
           width: 100%;
           color: white;
 
           #ebook-bold{
+            @include mobile {
+              font-size: 5vw !important;
+
+            }
+            @include tablet {
+              font-size: 5vw !important;
+            }
             display: inline-block;
             font-family: 'bebasBold' !important;
             font-size: 2.7vw !important;
           }
           #ebook-thin{
+            @include mobile {
+              font-size: 5vw !important;
+
+            }
+            @include tablet {
+              font-size: 5vw !important;
+            }
             display: inline-block;
             font-family: 'bebasLight' !important;
             font-size: 2.7vw !important;
           }
           #ebook-regular{
+            @include mobile {
+              font-size: 3vw !important;
+
+            }
+            @include tablet {
+              font-size: 3vw !important;
+            }
             display: inline-block;
             font-family: 'bebasRegular' !important;
             font-size: 1.7vw !important;
           }
           #ebook-small{
+            @include mobile {
+              font-size: 2.4vw !important;
+
+            }
+            @include tablet {
+              font-size: 2.4vw !important;
+            }
             font-family: 'bebasRegular' !important;
             font-size: 1.2vw !important;
           }

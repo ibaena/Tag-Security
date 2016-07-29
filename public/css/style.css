@@ -516,6 +516,14 @@ body {
     /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;*/ }
+    @media (max-width: 425px) {
+      #skewed #contact-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #contact-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #contact-block:before, #skewed #contact-block:after {
       background: inherit;
       content: '';
@@ -536,20 +544,52 @@ body {
       transform-origin: 100%; }
     #skewed #contact-block .main-title {
       padding-top: 20px; }
+      @media (max-width: 425px) {
+        #skewed #contact-block .main-title {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #contact-block .main-title {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
     #skewed #contact-block .contact-text {
       color: white;
       font-size: 10vw;
       text-align: right !important;
       line-height: 7.1vw; }
+      @media (max-width: 425px) {
+        #skewed #contact-block .contact-text {
+          font-size: 15vw;
+          text-align: center !important;
+          line-height: 33px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #contact-block .contact-text {
+          font-size: 15vw;
+          text-align: center !important;
+          line-height: 57px; } }
       #skewed #contact-block .contact-text .thin-text {
         font-family: 'bebasLight' !important;
         font-size: 10vw !important; }
+        @media (max-width: 425px) {
+          #skewed #contact-block .contact-text .thin-text {
+            font-size: 17vw; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #contact-block .contact-text .thin-text {
+            font-size: 17vw; } }
       #skewed #contact-block .contact-text .thinner-text {
         font-family: 'bebasThin' !important; }
     #skewed #contact-block #textarea {
       float: none !important; }
   #skewed #footer-block {
     text-align: center; }
+    @media (max-width: 425px) {
+      #skewed #footer-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #footer-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #footer-block #first-footer {
       position: relative;
       z-index: 1;
@@ -577,17 +617,46 @@ body {
         margin: 0 auto;
         padding-top: 10px;
         float: right; }
+        @media (max-width: 425px) {
+          #skewed #footer-block #first-footer #footer-logo {
+            display: block;
+            margin: 0 auto;
+            float: none !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #footer-block #first-footer #footer-logo {
+            display: block;
+            margin: 0 auto;
+            float: none !important; } }
       #skewed #footer-block #first-footer #footer-caption-box {
         margin-top: 20px; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #footer-block #first-footer #footer-caption-box {
+            margin-top: 0; } }
+        @media (max-width: 425px) {
+          #skewed #footer-block #first-footer #footer-caption-box #footer-caption-text {
+            font-size: 2.4vw; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #footer-block #first-footer #footer-caption-box #footer-caption-text {
+            font-size: 2.4vw;
+            margin-bottom: 20px; } }
     #skewed #footer-block #second-footer {
       height: 45px !important;
       background-color: #424242;
       color: white; }
       #skewed #footer-block #second-footer #footerCopy {
+        display: inline;
         text-align: center;
         display: inline-block; }
-        #skewed #footer-block #second-footer #footerCopy .footerText a {
-          color: white; }
+        #skewed #footer-block #second-footer #footerCopy .footerText {
+          display: inline-block; }
+          @media (max-width: 425px) {
+            #skewed #footer-block #second-footer #footerCopy .footerText {
+              font-size: 1.7vw; } }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            #skewed #footer-block #second-footer #footerCopy .footerText {
+              font-size: 1.7vw; } }
+          #skewed #footer-block #second-footer #footerCopy .footerText a {
+            color: white; }
 
 /*Nav Styles */
 nav {
@@ -637,8 +706,14 @@ nav {
   .pop-out #ebook-ad {
     width: 100%;
     float: right;
-    font-size: 2.5vw !important;
+    font-size: 2.5vw;
     margin-top: 40px; }
+    @media (max-width: 425px) {
+      .pop-out #ebook-ad {
+        width: 350px !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .pop-out #ebook-ad {
+        width: 480px !important; } }
     .pop-out #ebook-ad #ebook-img {
       float: left;
       margin-right: 30px;
@@ -647,21 +722,51 @@ nav {
       line-height: 2.5vw;
       width: 100%;
       color: white; }
+      @media (max-width: 425px) {
+        .pop-out #ebook-ad #ebook-text {
+          line-height: 3.9vw; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .pop-out #ebook-ad #ebook-text {
+          line-height: 3.9vw; } }
       .pop-out #ebook-ad #ebook-text #ebook-bold {
         display: inline-block;
         font-family: 'bebasBold' !important;
         font-size: 2.7vw !important; }
+        @media (max-width: 425px) {
+          .pop-out #ebook-ad #ebook-text #ebook-bold {
+            font-size: 5vw !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .pop-out #ebook-ad #ebook-text #ebook-bold {
+            font-size: 5vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-thin {
         display: inline-block;
         font-family: 'bebasLight' !important;
         font-size: 2.7vw !important; }
+        @media (max-width: 425px) {
+          .pop-out #ebook-ad #ebook-text #ebook-thin {
+            font-size: 5vw !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .pop-out #ebook-ad #ebook-text #ebook-thin {
+            font-size: 5vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-regular {
         display: inline-block;
         font-family: 'bebasRegular' !important;
         font-size: 1.7vw !important; }
+        @media (max-width: 425px) {
+          .pop-out #ebook-ad #ebook-text #ebook-regular {
+            font-size: 3vw !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .pop-out #ebook-ad #ebook-text #ebook-regular {
+            font-size: 3vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-small {
         font-family: 'bebasRegular' !important;
         font-size: 1.2vw !important; }
+        @media (max-width: 425px) {
+          .pop-out #ebook-ad #ebook-text #ebook-small {
+            font-size: 2.4vw !important; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .pop-out #ebook-ad #ebook-text #ebook-small {
+            font-size: 2.4vw !important; } }
 
 .sticky {
   position: fixed;
