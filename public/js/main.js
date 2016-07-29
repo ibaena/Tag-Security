@@ -5,8 +5,9 @@ $(document).ready(function() {
 
 
     $('#menu-burger').on('click', function() {
+
         showNav = !showNav;
-        console.log(showNav);
+
         if (showNav === true) {
             $('#tagNav').removeClass('hidden');
             $('#tagNav').removeClass('animated slideOutLeft');
@@ -44,7 +45,7 @@ $(document).ready(function() {
 //SHow ebook
 $('#showEbook').on('click', function() {
     showEbook = !showEbook;
-    console.log(showEbook);
+
     if (showEbook === true) {
         $('.pop-out').removeClass('hidden');
         $('#showEbook').removeClass('fa-arrow-circle-o-left');
@@ -64,6 +65,7 @@ $('#showEbook').on('click', function() {
 let stickyNavTop = $('#header-title').offset().top;
 
 let stickyNav = function(){
+
 let scrollTop = $(window).scrollTop();
 
 if (scrollTop > stickyNavTop) {
@@ -71,7 +73,7 @@ if (scrollTop > stickyNavTop) {
     $('.nav').addClass('animated slideInDown');
     $('.nav').removeClass('slideInUp');
 
-    showNav = !showNav;
+    showNav = true;
     if (showNav === true) {
       //links
         $('#tagNav').removeClass('hidden');
@@ -90,7 +92,7 @@ if (scrollTop > stickyNavTop) {
     showNav = !showNav;
     if (showNav === false) {
         $('#tagNav').removeClass('animated slideInLeft');
-        $('#tagNav').addClass('animated fadeOut');
+        //$('#tagNav').addClass('animated fadeOut');
 
         //menu-burger
         $('#menu-burger').removeClass('fadeOut');
@@ -108,5 +110,18 @@ $(window).scroll(function() {
   stickyNav();
 });
 
+  let launchSite = function(){
+    setTimeout(function(){
+      $('html, body').animate({
+          scrollTop: $('#header-title').offset().top
+      }, 1800, function() {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = '#why-exist-block';
+      });
+    })
+  };
+
+setTimeout(launchSite, 5000);
 
 });

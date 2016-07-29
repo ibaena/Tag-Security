@@ -1,6 +1,7 @@
 @import 'angle';
 @import 'fonts';
 @import 'responsive';
+
 //Page Sizing and Margins
 html body {
     height: 100%;
@@ -15,24 +16,29 @@ body {
 //Skewed DIV section
 #skewed {
     .content-block {
-        height: 500px;
+        height: 100% !important;
         width: 100%;
     }
     //Header Content Styles
     /*Header Content Styles*/
     #header {
         @include mobile {
-            height: 100% !important;
+            height: 100vh !important;
             width: 100%;
         }
         @include tablet {
-            height: 100% !important;
+            height: 100vh !important;
             width: 100%;
         }
         @include desktop {
-            height: 100% !important;
+            height: 100vh !important;
             width: 100%;
         }
+        @include xlarge {
+            height: 100vh !important;
+            width: 100%;
+        }
+
         height: 625px !important;
         background-image: url("../img/header-bg.png") !important;
         background-size: 100% 100%;
@@ -65,6 +71,15 @@ body {
                             height: auto;
                             max-width: 420px;
                         }
+                        @include xlarge {
+                            display: block;
+                            margin: 0 auto;
+                            padding-top: 50px;
+                            width: 100%;
+                            height: auto;
+                            max-width: 420px;
+                        }
+
                         display: block;
                         margin: 0 auto;
                         padding-top: 30px;
@@ -91,7 +106,12 @@ body {
                         font-size: 5.5vw;
                         font-family: 'kenyanRegular' !important;
                         padding-bottom: 30px;
-
+                    }
+                    @include xlarge {
+                        text-align: center;
+                        font-size: 5.5vw;
+                        font-family: 'kenyanRegular' !important;
+                        padding-bottom: 30px;
                     }
                     text-align: center;
                     font-size: 3.5vw;
@@ -113,6 +133,10 @@ body {
             width: 100% !important;
         }
         @include desktop {
+            height: 100% !important;
+            width: 100%;
+        }
+        @include xlarge {
             height: 100% !important;
             width: 100%;
         }
@@ -143,6 +167,11 @@ body {
                 color: white;
                 font-size: 13vw;
                 line-height: 8.7vw;
+            }
+            @include xlarge {
+                color: white;
+                font-size: 10vw;
+                line-height: 7vw;
             }
             color: white;
             font-size: 8vw;
@@ -176,6 +205,11 @@ body {
                 top: -35px;
                 position: relative;
             }
+            @include xlarge {
+                font-size: 2.3vw !important;
+                top: -35px;
+                position: relative;
+            }
             width: 100%;
             color: white !important;
             font-size: 1.9vw !important;
@@ -197,6 +231,11 @@ body {
                 position: relative;
                 top: -25px;
             }
+            @include xlarge {
+                margin-right: 480px;
+                position: relative;
+                top: -25px;
+            }
             margin-right: 480px;
         }
     }
@@ -213,6 +252,10 @@ body {
         }
         @include desktop {
             height: 260px !important;
+            width: 100% !important;
+        }
+        @include xlarge {
+            height: 300px !important;
             width: 100% !important;
         }
         height: 300px !important;
@@ -234,6 +277,10 @@ body {
             height: 260px !important;
             width: 100% !important;
         }
+        @include xlarge {
+            height: 300px !important;
+            width: 100% !important;
+        }
         height: 300px !important;
         width: 100%;
         background-image: url("../img/second-divider.png") !important;
@@ -252,6 +299,10 @@ body {
             width: 100% !important;
         }
         @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include xlarge {
             height: 100% !important;
             width: 100% !important;
         }
@@ -281,6 +332,11 @@ body {
             @include desktop {
                 color: white;
                 font-size: 12.3vw;
+                line-height: 7.7vw;
+            }
+            @include xlarge {
+                color: white;
+                font-size: 9vw;
                 line-height: 7.7vw;
             }
             color: white;
@@ -315,6 +371,11 @@ body {
                 top: -8px;
                 position: relative;
             }
+            @include xlarge {
+                font-size: 2.3vw !important;
+                top: -8px;
+                position: relative;
+            }
             width: 100%;
             color: white !important;
             font-size: 1.8vw !important;
@@ -333,6 +394,10 @@ body {
             width: 100% !important;
         }
         @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include xlarge {
             height: 100% !important;
             width: 100% !important;
         }
@@ -363,6 +428,11 @@ body {
                 color: white;
                 font-size: 13vw;
                 line-height: 8.7vw;
+            }
+            @include xlarge {
+                color: white;
+                font-size: 10vw;
+                line-height: 7vw;
             }
             color: white;
             font-size: 8vw;
@@ -395,6 +465,11 @@ body {
                     position: relative;
                     top: -25px;
                 }
+                @include xlarge {
+                    margin-right: 60px;
+                    position: relative;
+                    top: -25px;
+                }
                 margin-right: 80px;
             }
         }
@@ -412,6 +487,11 @@ body {
             @include desktop {
                 font-size: 3.0vw !important;
                 top: -30px;
+                position: relative;
+            }
+            @include xlarge {
+                font-size: 2.3vw !important;
+                top: -35px;
                 position: relative;
             }
             width: 100%;
@@ -435,6 +515,10 @@ body {
             height: 100% !important;
             width: 100% !important;
         }
+        @include xlarge {
+            height: 100% !important;
+            width: 100% !important;
+        }
         background-image: url("../img/analysis-bg.png") !important;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -454,6 +538,11 @@ body {
                 margin-bottom: 60px;
                 margin-right: 50px;
             }
+            @include xlarge {
+                margin-top: 80px;
+                margin-bottom: 80px;
+                margin-right: 50px;
+            }
             margin-top: 80px;
             line-height: 0.5vw;
             .list-head {
@@ -464,6 +553,9 @@ body {
                     font-size: 2.3vw;
                 }
                 @include desktop {
+                    font-size: 2.3vw;
+                }
+                @include xlarge {
                     font-size: 2.3vw;
                 }
                 font-family: 'bebasBold';
@@ -478,6 +570,9 @@ body {
                     }
                     @include desktop {
                         font-size: 3.3vw;
+                    }
+                    @include xlarge {
+                        font-size: 2.8vw;
                     }
                     color: white;
                     font-size: 2vw;
@@ -503,6 +598,10 @@ body {
             height: 100% !important;
             width: 100% !important;
         }
+        @include xlarge {
+            height: 100% !important;
+            width: 100% !important;
+        }
         @include angle(both, true);
         background-image: url("../img/our-services-bg.png") !important;
         background-size: 100% 100%;
@@ -520,6 +619,10 @@ body {
                 padding-top: 30px;
                 padding-bottom: 30px;
             }
+            @include xlarge {
+                padding-top: 40px;
+                padding-bottom: 50px;
+            }
             padding-top: 80px;
         }
         ul {
@@ -533,6 +636,10 @@ body {
                     font-size: 1.6vw;
                 }
                 @include desktop {
+                    margin-bottom: 2px;
+                    font-size: 1.6vw;
+                }
+                @include xlarge {
                     margin-bottom: 2px;
                     font-size: 1.6vw;
                 }
@@ -555,6 +662,10 @@ body {
             @include desktop {
                 font-size: 12.2vw;
                 line-height: 7.8vw;
+            }
+            @include xlarge {
+                font-size: 12.4vw;
+                line-height: 7.4vw;
             }
             color: #0D47A1;
             font-size: 10.2vw;
@@ -579,6 +690,11 @@ body {
             width: 100% !important;
         }
         @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+            padding-bottom: 40px;
+        }
+        @include xlarge {
             height: 100% !important;
             width: 100% !important;
             padding-bottom: 40px;
@@ -652,6 +768,10 @@ body {
             height: 100% !important;
             width: 100% !important;
         }
+        @include xlarge {
+            height: 100% !important;
+            width: 100% !important;
+        }
         text-align: center;
         #first-footer {
             @include angle(before, true);
@@ -696,7 +816,6 @@ body {
                     }
                     @include desktop {
                         font-size: 1.6vw;
-
                     }
                 }
             }
@@ -719,6 +838,10 @@ body {
                     @include desktop {
                         padding-top: 10px;
                         font-size: 1.3vw;
+                    }
+                    @include xlarge {
+                        padding-top: 10px;
+                        font-size: 1vw;
                     }
                     display: inline-block;
                     a {
@@ -765,6 +888,9 @@ nav {
         @include desktop {
             font-size: 3.5vw !important;
         }
+        @include desktop {
+            font-size: 3.5vw !important;
+        }
         float: right;
         margin-top: 15px;
         margin-right: 25px;
@@ -799,6 +925,9 @@ nav {
             width: 480px !important;
         }
         @include desktop {
+            width: 500px !important;
+        }
+        @include xlarge {
             width: 500px !important;
         }
         width: 100%;
@@ -861,6 +990,9 @@ nav {
                 @include desktop {
                     font-size: 2vw !important;
                 }
+                @include wide {
+                    font-size: 1.3vw !important;
+                }
                 display: inline-block;
                 font-family: 'bebasRegular' !important;
                 font-size: 1.7vw !important;
@@ -874,6 +1006,9 @@ nav {
                 }
                 @include desktop {
                     font-size: 1.6vw !important;
+                }
+                @include wide {
+                    font-size: 1vw !important;
                 }
                 font-family: 'bebasRegular' !important;
                 font-size: 1.2vw !important;
