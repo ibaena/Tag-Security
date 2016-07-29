@@ -42,86 +42,86 @@ $(document).ready(function() {
         } // End if
     });
 
-//SHow ebook
-$('#showEbook').on('click', function() {
-    showEbook = !showEbook;
+    //SHow ebook
+    $('#showEbook').on('click', function() {
+        showEbook = !showEbook;
 
-    if (showEbook === true) {
-        $('.pop-out').removeClass('hidden');
-        $('#showEbook').removeClass('fa-arrow-circle-o-left');
-        $('.pop-out').removeClass('animated slideOutRight');
-        $('#showEbook').addClass('fa-times');
-        $('.pop-out').addClass('animated slideInRight');
-    } else {
-        $('.pop-out').removeClass('animated slideInRight');
-        $('#showEbook').removeClass('fa-times');
-        $('#showEbook').addClass('fa-arrow-circle-o-left');
-        $('.pop-out').addClass('animated slideOutRight');
+        if (showEbook === true) {
+            $('.pop-out').removeClass('hidden');
+            $('#showEbook').removeClass('fa-arrow-circle-o-left');
+            $('.pop-out').removeClass('animated slideOutRight');
+            $('#showEbook').addClass('fa-times');
+            $('.pop-out').addClass('animated slideInRight');
+        } else {
+            $('.pop-out').removeClass('animated slideInRight');
+            $('#showEbook').removeClass('fa-times');
+            $('#showEbook').addClass('fa-arrow-circle-o-left');
+            $('.pop-out').addClass('animated slideOutRight');
 
-    }
-});
+        }
+    });
 
-//Sticky Nav on scroll
-let stickyNavTop = $('#header-title').offset().top;
+    //Sticky Nav on scroll
+    let stickyNavTop = $('#header-title').offset().top;
 
-let stickyNav = function(){
+    let stickyNav = function() {
 
-let scrollTop = $(window).scrollTop();
+        let scrollTop = $(window).scrollTop();
 
-if (scrollTop > stickyNavTop) {
-    $('.nav').addClass('sticky');
-    $('.nav').addClass('animated slideInDown');
-    $('.nav').removeClass('slideInUp');
+        if (scrollTop > stickyNavTop) {
+            $('.nav').addClass('sticky');
+            $('.nav').addClass('animated slideInDown');
+            $('.nav').removeClass('slideInUp');
 
-    showNav = true;
-    if (showNav === true) {
-      //links
-        $('#tagNav').removeClass('hidden');
-        $('#tagNav').removeClass('animated fadeOut');
-        $('#tagNav').addClass('animated slideInLeft');
-      //menu-burger
-        $('#menu-burger').removeClass('fadeIn');
-        $('#menu-burger').addClass('animated fadeOut');
-    }
+            showNav = true;
+            if (showNav === true) {
+                //links
+                $('#tagNav').removeClass('hidden');
+                $('#tagNav').removeClass('animated fadeOut');
+                $('#tagNav').addClass('animated slideInLeft');
+                //menu-burger
+                $('#menu-burger').removeClass('fadeIn');
+                $('#menu-burger').addClass('animated fadeOut');
+            }
 
-} else {
-    $('.nav').removeClass('sticky');
-    $('.nav').removeClass('slideInDown');
-    $('.nav').addClass('slideInUp');
+        } else {
+            $('.nav').removeClass('sticky');
+            $('.nav').removeClass('slideInDown');
+            $('.nav').addClass('slideInUp');
 
-    showNav = !showNav;
-    if (showNav === false) {
-        $('#tagNav').removeClass('animated slideInLeft');
-        //$('#tagNav').addClass('animated fadeOut');
+            showNav = !showNav;
+            if (showNav === false) {
+                $('#tagNav').removeClass('animated slideInLeft');
+                //$('#tagNav').addClass('animated fadeOut');
 
-        //menu-burger
-        $('#menu-burger').removeClass('fadeOut');
-        $('#menu-burger').addClass('fadeIn');
+                //menu-burger
+                $('#menu-burger').removeClass('fadeOut');
+                $('#menu-burger').addClass('fadeIn');
 
-    }
+            }
 
 
-}
-};
+        }
+    };
 
-stickyNav();
+    stickyNav();
 
-$(window).scroll(function() {
-  stickyNav();
-});
+    $(window).scroll(function() {
+        stickyNav();
+    });
 
-  let launchSite = function(){
-    setTimeout(function(){
-      $('html, body').animate({
-          scrollTop: $('#header-title').offset().top
-      }, 1800, function() {
+    let launchSite = function() {
+        setTimeout(function() {
+            $('html, body').animate({
+                scrollTop: $('#header-title').offset().top
+            }, 1800, function() {
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = '#why-exist-block';
-      });
-    })
-  };
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = '#why-exist-block';
+            });
+        })
+    };
 
-setTimeout(launchSite, 5000);
+    setTimeout(launchSite, 5000);
 
 });

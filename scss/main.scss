@@ -1,7 +1,6 @@
 @import 'angle';
 @import 'fonts';
 @import 'responsive';
-
 //Page Sizing and Margins
 html body {
     height: 100%;
@@ -35,11 +34,9 @@ body {
             width: 100%;
         }
         @include xlarge {
-
             height: 100vh !important;
             width: 100%;
         }
-
         height: 625px !important;
         background-image: url("../img/header-bg.png") !important;
         background-size: 100% 100%;
@@ -47,16 +44,16 @@ body {
         .header-wrapper {
             section {
                 @include mobile {
-                padding-top: 120px;
+                    padding-top: 120px;
                 }
                 @include tablet {
-                padding-top: 130px;
+                    padding-top: 130px;
                 }
                 @include desktop {
-                padding-top: 0;
+                    padding-top: 0;
                 }
                 @include xlarge {
-                padding-bottom: 30px;
+                    padding-bottom: 30px;
                 }
                 .logo-wrapper {
                     #brand-logo {
@@ -92,7 +89,6 @@ body {
                             height: auto;
                             max-width: 420px;
                         }
-
                         display: block;
                         margin: 0 auto;
                         padding-top: 30px;
@@ -968,7 +964,7 @@ nav {
             width: 500px !important;
         }
         @include xlarge {
-            width: 500px !important;
+            width: 600px !important;
         }
         width: 100%;
         float: right;
@@ -989,6 +985,9 @@ nav {
             @include desktop {
                 line-height: 3.9vw;
             }
+            @include xlarge {
+                line-height: 2.8vw;
+            }
             line-height: 2.5vw;
             width: 100%;
             color: white;
@@ -1001,6 +1000,9 @@ nav {
                 }
                 @include desktop {
                     font-size: 5vw !important;
+                }
+                @include xlarge {
+                    font-size: 3vw !important;
                 }
                 display: inline-block;
                 font-family: 'bebasBold' !important;
@@ -1016,6 +1018,9 @@ nav {
                 @include desktop {
                     font-size: 5vw !important;
                 }
+                @include xlarge {
+                    font-size: 3vw !important;
+                }
                 display: inline-block;
                 font-family: 'bebasLight' !important;
                 font-size: 2.7vw !important;
@@ -1030,8 +1035,8 @@ nav {
                 @include desktop {
                     font-size: 2vw !important;
                 }
-                @include wide {
-                    font-size: 1.3vw !important;
+                @include xlarge {
+                    font-size: 1.7vw !important;
                 }
                 display: inline-block;
                 font-family: 'bebasRegular' !important;
@@ -1046,6 +1051,9 @@ nav {
                 }
                 @include desktop {
                     font-size: 1.6vw !important;
+                }
+                @include xlarge {
+                    font-size: 1vw !important;
                 }
                 @include wide {
                     font-size: 1vw !important;

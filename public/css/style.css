@@ -1025,7 +1025,7 @@ nav {
         width: 500px !important; } }
     @media (min-width: 1440px) and (max-width: 2559px) {
       .pop-out #ebook-ad {
-        width: 500px !important; } }
+        width: 600px !important; } }
     .pop-out #ebook-ad #ebook-img {
       float: left;
       margin-right: 30px;
@@ -1043,6 +1043,9 @@ nav {
       @media (min-width: 1024px) and (max-width: 1439px) {
         .pop-out #ebook-ad #ebook-text {
           line-height: 3.9vw; } }
+      @media (min-width: 1440px) and (max-width: 2559px) {
+        .pop-out #ebook-ad #ebook-text {
+          line-height: 2.8vw; } }
       .pop-out #ebook-ad #ebook-text #ebook-bold {
         display: inline-block;
         font-family: 'bebasBold' !important;
@@ -1056,6 +1059,9 @@ nav {
         @media (min-width: 1024px) and (max-width: 1439px) {
           .pop-out #ebook-ad #ebook-text #ebook-bold {
             font-size: 5vw !important; } }
+        @media (min-width: 1440px) and (max-width: 2559px) {
+          .pop-out #ebook-ad #ebook-text #ebook-bold {
+            font-size: 3vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-thin {
         display: inline-block;
         font-family: 'bebasLight' !important;
@@ -1069,6 +1075,9 @@ nav {
         @media (min-width: 1024px) and (max-width: 1439px) {
           .pop-out #ebook-ad #ebook-text #ebook-thin {
             font-size: 5vw !important; } }
+        @media (min-width: 1440px) and (max-width: 2559px) {
+          .pop-out #ebook-ad #ebook-text #ebook-thin {
+            font-size: 3vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-regular {
         display: inline-block;
         font-family: 'bebasRegular' !important;
@@ -1082,9 +1091,9 @@ nav {
         @media (min-width: 1024px) and (max-width: 1439px) {
           .pop-out #ebook-ad #ebook-text #ebook-regular {
             font-size: 2vw !important; } }
-        @media (min-width: 2560px) {
+        @media (min-width: 1440px) and (max-width: 2559px) {
           .pop-out #ebook-ad #ebook-text #ebook-regular {
-            font-size: 1.3vw !important; } }
+            font-size: 1.7vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-small {
         font-family: 'bebasRegular' !important;
         font-size: 1.2vw !important; }
@@ -1097,6 +1106,9 @@ nav {
         @media (min-width: 1024px) and (max-width: 1439px) {
           .pop-out #ebook-ad #ebook-text #ebook-small {
             font-size: 1.6vw !important; } }
+        @media (min-width: 1440px) and (max-width: 2559px) {
+          .pop-out #ebook-ad #ebook-text #ebook-small {
+            font-size: 1vw !important; } }
         @media (min-width: 2560px) {
           .pop-out #ebook-ad #ebook-text #ebook-small {
             font-size: 1vw !important; } }
