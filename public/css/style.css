@@ -27,6 +27,7 @@
   font-family: 'kenyanRegular';
   src: url("/public/assets/kenyan coffee rg.ttf"); }
 
+/*Media Queries*/
 html body {
   height: 100%;
   width: 100%; }
@@ -55,6 +56,12 @@ body {
     background-image: url(../img/header-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    @media (max-width: 425px) {
+      #skewed #header {
+        height: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #header {
+        height: 100% !important; } }
     #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
       display: block;
       margin: 0 auto;
@@ -62,11 +69,39 @@ body {
       width: 100%;
       height: auto;
       max-width: 450px; }
+      @media (max-width: 425px) {
+        #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
+          display: block;
+          margin: 0 auto;
+          padding-top: 30px;
+          width: 100%;
+          height: auto;
+          max-width: 250px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
+          display: block;
+          margin: 0 auto;
+          padding-top: 30px;
+          width: 100%;
+          height: auto;
+          max-width: 250px; } }
     #skewed #header .header-wrapper section #header-title {
       text-align: center;
       font-size: 3.5vw;
       font-family: 'kenyanRegular' !important;
       padding-bottom: 10px; }
+      @media (max-width: 425px) {
+        #skewed #header .header-wrapper section #header-title {
+          text-align: center;
+          font-size: 5.5vw;
+          font-family: 'kenyanRegular' !important;
+          padding-bottom: 15px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #header .header-wrapper section #header-title {
+          text-align: center;
+          font-size: 5.5vw;
+          font-family: 'kenyanRegular' !important;
+          padding-bottom: 20px; } }
   #skewed #why-exist-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -78,6 +113,14 @@ body {
     /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;*/ }
+    @media (max-width: 425px) {
+      #skewed #why-exist-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #why-exist-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #why-exist-block:before, #skewed #why-exist-block:after {
       background: inherit;
       content: '';
@@ -102,6 +145,16 @@ body {
       color: white;
       font-size: 8vw;
       line-height: 5.2vw; }
+      @media (max-width: 425px) {
+        #skewed #why-exist-block .why-text {
+          color: white;
+          font-size: 11vw;
+          line-height: 7.4vw; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #why-exist-block .why-text {
+          color: white;
+          font-size: 12vw;
+          line-height: 7.9vw; } }
       #skewed #why-exist-block .why-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -116,20 +169,56 @@ body {
       color: white !important;
       font-size: 1.9vw !important;
       font-family: 'bebasRegular' !important; }
+      @media (max-width: 425px) {
+        #skewed #why-exist-block #why-sub-text {
+          font-size: 3.8vw !important;
+          top: -35px;
+          position: relative; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #why-exist-block #why-sub-text {
+          font-size: 4.0vw !important;
+          top: -35px;
+          position: relative; } }
     #skewed #why-exist-block hr {
       margin-right: 480px; }
+      @media (max-width: 425px) {
+        #skewed #why-exist-block hr {
+          margin-right: 170px;
+          position: relative;
+          top: -18px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #why-exist-block hr {
+          margin-right: 310px;
+          position: relative;
+          top: -18px; } }
   #skewed .first-divider {
     height: 300px !important;
     width: 100%;
     background-image: url(../img/first-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    @media (max-width: 425px) {
+      #skewed .first-divider {
+        height: 140px !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed .first-divider {
+        height: 240px !important;
+        width: 100% !important; } }
   #skewed .second-divider {
     height: 300px !important;
     width: 100%;
     background-image: url(../img/second-divider.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    @media (max-width: 425px) {
+      #skewed .second-divider {
+        height: 140px !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed .second-divider {
+        height: 240px !important;
+        width: 100% !important; } }
   #skewed #how-block {
     background-image: -webkit-gradient(linear, 0 0, 960.5 0, color-stop(0.019, #0097f1), color-stop(0.271, #00a1f1), to(#00b3f1));
     background-image: -webkit-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
@@ -141,6 +230,14 @@ body {
     /*background-image: url(../img/how-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;*/ }
+    @media (max-width: 425px) {
+      #skewed #how-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #how-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #how-block:before, #skewed #how-block:after {
       background: inherit;
       content: '';
@@ -165,6 +262,16 @@ body {
       color: white;
       font-size: 8vw;
       line-height: 5.2vw; }
+      @media (max-width: 425px) {
+        #skewed #how-block .how-text {
+          color: white;
+          font-size: 11vw;
+          line-height: 7.4vw; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #how-block .how-text {
+          color: white;
+          font-size: 11.9vw;
+          line-height: 7.7vw; } }
       #skewed #how-block .how-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -179,6 +286,16 @@ body {
       color: white !important;
       font-size: 1.8vw !important;
       font-family: 'bebasRegular' !important; }
+      @media (max-width: 425px) {
+        #skewed #how-block #how-sub-text {
+          font-size: 3.8vw !important;
+          top: -8px;
+          position: relative; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #how-block #how-sub-text {
+          font-size: 4.0vw !important;
+          top: -8px;
+          position: relative; } }
   #skewed #what-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -190,6 +307,14 @@ body {
     /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;*/ }
+    @media (max-width: 425px) {
+      #skewed #what-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #what-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #what-block:before, #skewed #what-block:after {
       background: inherit;
       content: '';
@@ -214,6 +339,16 @@ body {
       color: white;
       font-size: 8vw;
       line-height: 5.2vw; }
+      @media (max-width: 425px) {
+        #skewed #what-block .what-text {
+          color: white;
+          font-size: 11vw;
+          line-height: 7.4vw; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #what-block .what-text {
+          color: white;
+          font-size: 11.9vw;
+          line-height: 7.7vw; } }
       #skewed #what-block .what-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -225,34 +360,92 @@ body {
         font-family: 'bebasThin'; }
       #skewed #what-block .what-text hr {
         margin-right: 80px; }
+        @media (max-width: 425px) {
+          #skewed #what-block .what-text hr {
+            margin-right: 27px;
+            position: relative;
+            top: -18px; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #what-block .what-text hr {
+            margin-right: 33px;
+            position: relative;
+            top: -18px; } }
     #skewed #what-block #what-sub-text {
       width: 100%;
       color: white !important;
       font-size: 1.8vw !important;
       font-family: 'bebasRegular' !important; }
+      @media (max-width: 425px) {
+        #skewed #what-block #what-sub-text {
+          font-size: 3.8vw !important;
+          top: -34px;
+          position: relative; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #what-block #what-sub-text {
+          font-size: 4.0vw !important;
+          top: -37px;
+          position: relative; } }
   #skewed #analysis-block {
     background-image: url(../img/analysis-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    @media (max-width: 425px) {
+      #skewed #analysis-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #analysis-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #analysis-block #analysis-list {
       margin-top: 80px;
       line-height: 0.5vw; }
+      @media (max-width: 425px) {
+        #skewed #analysis-block #analysis-list {
+          margin-top: 40px;
+          margin-bottom: 30px;
+          margin-right: 35px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #analysis-block #analysis-list {
+          margin-top: 40px;
+          margin-bottom: 30px;
+          margin-right: 35px; } }
       #skewed #analysis-block #analysis-list .list-head {
         font-family: 'bebasBold';
         color: #0D47A1;
         font-size: 1.5vw; }
+        @media (max-width: 425px) {
+          #skewed #analysis-block #analysis-list .list-head {
+            font-size: 2.3vw; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #analysis-block #analysis-list .list-head {
+            font-size: 2.3vw; } }
         #skewed #analysis-block #analysis-list .list-head .list-description {
           color: white;
           font-size: 2vw;
           font-weight: 200;
           text-align: right;
           font-family: 'bebasLight' !important; }
+          @media (max-width: 425px) {
+            #skewed #analysis-block #analysis-list .list-head .list-description {
+              font-size: 3.3vw; } }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            #skewed #analysis-block #analysis-list .list-head .list-description {
+              font-size: 3.3vw; } }
   #skewed #services-block {
     position: relative;
     z-index: 1;
     background-image: url(../img/our-services-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+    @media (max-width: 425px) {
+      #skewed #services-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #services-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #services-block:before, #skewed #services-block:after {
       background: inherit;
       content: '';
@@ -273,16 +466,40 @@ body {
       transform-origin: 0 0; }
     #skewed #services-block .main-title {
       padding-top: 80px; }
+      @media (max-width: 425px) {
+        #skewed #services-block .main-title {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #services-block .main-title {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
     #skewed #services-block ul .services-list {
       margin-bottom: 15px;
       text-align: right;
       color: #0D47A1;
       font-family: 'bebasRegular' !important;
       font-size: 1.2vw; }
+      @media (max-width: 425px) {
+        #skewed #services-block ul .services-list {
+          margin-bottom: 2px;
+          font-size: 1.5vw; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #services-block ul .services-list {
+          margin-bottom: 2px;
+          font-size: 1.6vw; } }
     #skewed #services-block .services-text {
       color: #0D47A1;
       font-size: 10.2vw;
       line-height: 7.2vw; }
+      @media (max-width: 425px) {
+        #skewed #services-block .services-text {
+          font-size: 12.2vw;
+          line-height: 7.8vw; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #services-block .services-text {
+          font-size: 12.2vw;
+          line-height: 7.8vw; } }
       #skewed #services-block .services-text .thin-text {
         font-family: 'bebasRegular' !important; }
       #skewed #services-block .services-text .thinner-text {
