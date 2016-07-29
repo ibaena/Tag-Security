@@ -868,21 +868,48 @@ body {
 //NAV Styles
 /*Nav Styles */
 nav {
+    @include mobile {
+        height: 40px !important;
+    }
+    @include tablet {
+        height: 50px !important;
+    }
     width: 100%;
     position: fixed;
     z-index: 999;
     #tagNav {
-        margin-left: 20px;
+        @include mobile {
+            margin-left: 10px;
+        }
+        @include tablet {
+            margin-left: 10px;
+            padding-bottom: 10px;
+        }
+        margin-left: 30px;
         position: relative;
         z-index: 99;
-        margin-top: 25px;
+        margin-top: 20px;
         display: inline-block;
         font-size: 1.1vw;
         li {
+            display: inline;
             a {
+                display: inline;
                 color: #0a1ea4;
                 font-family: 'bebasRegular' !important;
                 font-size: 1.3vw;
+                padding-right: 20px;
+                padding-left: 20px;
+                @include mobile {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    font-size: 2vw;
+                }
+                @include tablet {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    font-size: 2vw;
+                }
             }
             a:hover {
                 background-color: rgba(10, 30, 164, .5);

@@ -929,21 +929,49 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 999; }
+  @media (max-width: 425px) {
+    nav {
+      height: 40px !important; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    nav {
+      height: 50px !important; } }
   nav #tagNav {
-    margin-left: 20px;
+    margin-left: 30px;
     position: relative;
     z-index: 99;
-    margin-top: 25px;
+    margin-top: 20px;
     display: inline-block;
     font-size: 1.1vw; }
-    nav #tagNav li a {
-      color: #0a1ea4;
-      font-family: 'bebasRegular' !important;
-      font-size: 1.3vw; }
-    nav #tagNav li a:hover {
-      background-color: rgba(10, 30, 164, 0.5);
-      color: white;
-      border-radius: 10px; }
+    @media (max-width: 425px) {
+      nav #tagNav {
+        margin-left: 10px; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      nav #tagNav {
+        margin-left: 10px;
+        padding-bottom: 10px; } }
+    nav #tagNav li {
+      display: inline; }
+      nav #tagNav li a {
+        display: inline;
+        color: #0a1ea4;
+        font-family: 'bebasRegular' !important;
+        font-size: 1.3vw;
+        padding-right: 20px;
+        padding-left: 20px; }
+        @media (max-width: 425px) {
+          nav #tagNav li a {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 2vw; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          nav #tagNav li a {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 2vw; } }
+      nav #tagNav li a:hover {
+        background-color: rgba(10, 30, 164, 0.5);
+        color: white;
+        border-radius: 10px; }
   nav #menu-burger {
     float: right;
     margin-top: 15px;
