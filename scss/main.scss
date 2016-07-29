@@ -1,790 +1,906 @@
 @import 'angle';
 @import 'fonts';
 @import 'responsive';
-
 //Page Sizing and Margins
-html body{
-  height: 100%;
-  width: 100%;
+html body {
+    height: 100%;
+    width: 100%;
 }
-body{
-  margin: 0 auto;
-
+body {
+    margin: 0 auto;
 }
-
-.hidden { display: none !important; }
-
+.hidden {
+    display: none !important;
+}
 //Skewed DIV section
-#skewed{
-  .content-block{
-    height: 500px;
-    width: 100%;
-
-  }
-
-  //Header Content Styles
-  /*Header Content Styles*/
-  #header{
-    @include mobile {
-      height: 100% !important;
+#skewed {
+    .content-block {
+        height: 500px;
+        width: 100%;
     }
-    @include tablet {
-      height: 100% !important;
-    }
-
-    height: 625px !important;
-    background-image: url(../img/header-bg.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    .header-wrapper{
-      section{
-        .logo-wrapper{
-          #brand-logo{
-            @include mobile {
-              display: block;
-              margin: 0 auto;
-              padding-top: 30px;
-              width: 100%;
-              height: auto;
-              max-width: 250px;
-            }
-            @include tablet {
-              display: block;
-              margin: 0 auto;
-              padding-top: 30px;
-              width: 100%;
-              height: auto;
-              max-width: 250px;
-            }
-            display: block;
-            margin: 0 auto;
-            padding-top: 30px;
+    //Header Content Styles
+    /*Header Content Styles*/
+    #header {
+        @include mobile {
+            height: 100% !important;
             width: 100%;
-            height: auto;
-            max-width: 450px;
-          }
-        }
-        #header-title{
-          @include mobile {
-            text-align: center;
-            font-size: 5.5vw;
-            font-family: 'kenyanRegular' !important;
-            padding-bottom: 15px;
-          }
-          @include tablet {
-            text-align: center;
-            font-size: 5.5vw;
-            font-family: 'kenyanRegular' !important;
-            padding-bottom: 20px;
-          }
-          text-align: center;
-          font-size: 3.5vw;
-          font-family: 'kenyanRegular' !important;
-          padding-bottom: 10px;
-        }
-      }
-    }
-  }
-
-  //Why Content Styles
-  /*Why Content Styles*/
-  #why-exist-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-
-    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
-    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
-    @include angle(both, true);
-
-    /*background-image: url(../img/what-we-offer-bg.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;*/
-
-      .main-title{
-      padding-top: 40px;
-      }
-      .why-text{
-        @include mobile {
-          color: white;
-          font-size: 11vw;
-          line-height: 7.4vw;
         }
         @include tablet {
-          color: white;
-          font-size: 12vw;
-          line-height: 7.9vw;
+            height: 100% !important;
+            width: 100%;
         }
-        color: white;
-        font-size: 8vw;
-        line-height: 5.2vw;
-        .bold-text{
-          font-weight: 400;
-          font-family: 'bebasBold';
+        @include desktop {
+            height: 100% !important;
+            width: 100%;
+        }
+        height: 625px !important;
+        background-image: url("../img/header-bg.png") !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .header-wrapper {
+            section {
+                .logo-wrapper {
+                    #brand-logo {
+                        @include mobile {
+                            display: block;
+                            margin: 0 auto;
+                            padding-top: 30px;
+                            width: 100%;
+                            height: auto;
+                            max-width: 250px;
+                        }
+                        @include tablet {
+                            display: block;
+                            margin: 0 auto;
+                            padding-top: 30px;
+                            width: 100%;
+                            height: auto;
+                            max-width: 250px;
+                        }
+                        @include desktop {
+                            display: block;
+                            margin: 0 auto;
+                            padding-top: 50px;
+                            width: 100%;
+                            height: auto;
+                            max-width: 420px;
+                        }
+                        display: block;
+                        margin: 0 auto;
+                        padding-top: 30px;
+                        width: 100%;
+                        height: auto;
+                        max-width: 450px;
+                    }
+                }
+                #header-title {
+                    @include mobile {
+                        text-align: center;
+                        font-size: 5.5vw;
+                        font-family: 'kenyanRegular' !important;
+                        padding-bottom: 15px;
+                    }
+                    @include tablet {
+                        text-align: center;
+                        font-size: 5.5vw;
+                        font-family: 'kenyanRegular' !important;
+                        padding-bottom: 20px;
+                    }
+                    @include desktop {
+                        text-align: center;
+                        font-size: 5.5vw;
+                        font-family: 'kenyanRegular' !important;
+                        padding-bottom: 30px;
 
-        }
-        .thin-text{
-          font-weight: 200;
-          font-family: 'bebaslight';
-
-        }
-        .thinner-text{
-          font-weight: 100;
-          font-family: 'bebasThin';
-        }
-      }
-      #why-sub-text{
-        @include mobile {
-          font-size: 3.8vw !important;
-          top: -35px;
-          position: relative;
-        }
-        @include tablet {
-          font-size: 4.0vw !important;
-          top: -35px;
-          position: relative;
-        }
-        width: 100%;
-        color: white !important;
-        font-size: 1.9vw !important;
-        font-family: 'bebasRegular' !important;
-      }
-      hr{
-        @include mobile{
-          margin-right: 170px;
-          position: relative;
-          top: -18px;
-        }
-        @include tablet{
-          margin-right: 310px;
-          position: relative;
-          top: -18px;
-        }
-        margin-right: 480px;
-      }
-  }
-
-  //Divider Styles
-  /*Divider Styles*/
-  .first-divider{
-    @include mobile {
-      height: 140px !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 240px !important;
-      width: 100% !important;
-    }
-    height: 300px !important;
-    width: 100%;
-    background-image: url(../img/first-divider.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .second-divider{
-    @include mobile {
-      height: 140px !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 240px !important;
-      width: 100% !important;
-    }
-    height: 300px !important;
-    width: 100%;
-    background-image: url(../img/second-divider.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  //How Content Styles
-  /*How Content Styles*/
-  #how-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    background-image: -webkit-gradient(linear, 0 0, 960.5 0, color-stop(0.019, #0097f1), color-stop(0.271, #00a1f1), to(#00b3f1));
-    background-image: -webkit-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
-    background-image: -moz-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
-    background-image: -o-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
-    background-image: linear-gradient(90deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
-    @include angle(both, after);
-    /*background-image: url(../img/how-bg.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;*/
-      .main-title{
-        padding-top: 30px;
-      }
-      .how-text{
-        @include mobile {
-          color: white;
-          font-size: 11vw;
-          line-height: 7.4vw;
-        }
-        @include tablet {
-          color: white;
-          font-size: 11.9vw;
-          line-height: 7.7vw;
-        }
-        color: white;
-        font-size: 8vw;
-        line-height: 5.2vw;
-        .bold-text{
-          font-weight: 400;
-          font-family: 'bebasBold';
-        }
-        .thin-text{
-          font-weight: 200;
-          font-family: 'bebaslight';
-        }
-        .thinner-text{
-          font-weight: 100;
-          font-family: 'bebasThin';
-        }
-      }
-      #how-sub-text{
-        @include mobile {
-          font-size: 3.8vw !important;
-          top: -8px;
-          position: relative;
-        }
-        @include tablet {
-          font-size: 4.0vw !important;
-          top: -8px;
-          position: relative;
-        }
-        width: 100%;
-        color: white !important;
-        font-size: 1.8vw !important;
-        font-family: 'bebasRegular' !important;
-      }
-  }
-
-  //What Do We Offer Content Styles
-  /*What Do We Offer Content Styles*/
-  #what-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
-    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
-    @include angle(both, true);
-
-    /*background-image: url(../img/what-we-offer-bg.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;*/
-      .main-title{
-        padding-top: 40px;
-      }
-      .what-text{
-        @include mobile {
-          color: white;
-          font-size: 11vw;
-          line-height: 7.4vw;
-        }
-        @include tablet {
-          color: white;
-          font-size: 11.9vw;
-          line-height: 7.7vw;
-        }
-        color: white;
-        font-size: 8vw;
-        line-height: 5.2vw;
-        .bold-text{
-          font-weight: 400;
-          font-family: 'bebasBold';
-        }
-        .thin-text{
-          font-weight: 200;
-          font-family: 'bebaslight';
-        }
-        .thinner-text{
-          font-weight: 100;
-          font-family: 'bebasThin';
-        }
-        hr{
-          @include mobile{
-            margin-right: 27px;;
-            position: relative;
-            top: -18px;
-          }
-          @include tablet{
-            margin-right: 33px;
-            position: relative;
-            top: -18px;
-          }
-          margin-right: 80px;
-        }
-      }
-      #what-sub-text{
-        @include mobile {
-          font-size: 3.8vw !important;
-          top: -34px;
-          position: relative;
-        }
-        @include tablet {
-          font-size: 4.0vw !important;
-          top: -37px;
-          position: relative;
-        }
-        width: 100%;
-        color: white !important;
-        font-size: 1.8vw !important;
-        font-family: 'bebasRegular' !important;
-      }
-  }
-
-  //What Do We Offer Content Styles
-  /*What Do We Offer Content Styles*/
-  #analysis-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    background-image: url(../img/analysis-bg.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-      #analysis-list{
-        @include mobile {
-          margin-top: 40px;
-          margin-bottom: 30px;
-          margin-right: 35px;
-        }
-        @include tablet {
-          margin-top: 40px;
-          margin-bottom: 30px;
-          margin-right: 35px;
-        }
-        margin-top: 80px;
-        line-height: 0.5vw;
-        .list-head{
-          @include mobile {
-            font-size: 2.3vw;
-          }
-          @include tablet {
-            font-size: 2.3vw;
-          }
-          font-family: 'bebasBold';
-          color: #0D47A1;
-          font-size: 1.5vw;
-            .list-description{
-              @include mobile {
-                font-size: 3.3vw;
-              }
-              @include tablet {
-                font-size: 3.3vw;
-              }
-              color: white;
-              font-size: 2vw;
-              font-weight: 200;
-              text-align: right;
-              font-family: 'bebasLight' !important;
+                    }
+                    text-align: center;
+                    font-size: 3.5vw;
+                    font-family: 'kenyanRegular' !important;
+                    padding-bottom: 10px;
+                }
             }
         }
-      }
-  }
-
-  //Services Offer Content Styles
-  /*Services Offer Content Styles*/
-  #services-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
     }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include angle(both, true);
-    background-image: url(../img/our-services-bg.png) !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-      .main-title{
+    //Why Content Styles
+    /*Why Content Styles*/
+    #why-exist-block {
         @include mobile {
-          padding-top: 30px;
-          padding-bottom: 30px;
+            height: 100% !important;
+            width: 100% !important;
         }
         @include tablet {
-          padding-top: 30px;
-          padding-bottom: 30px;
+            height: 100% !important;
+            width: 100% !important;
         }
-        padding-top: 80px;
-      }
-      ul{
-
-        .services-list{
-          @include mobile {
-            margin-bottom: 2px;
-            font-size: 1.5vw;
-          }
-          @include tablet {
-            margin-bottom: 2px;
-            font-size: 1.6vw;
-          }
-          margin-bottom: 15px;
-          text-align: right;
-          color: #0D47A1;
-          font-family: 'bebasRegular' !important;
-          font-size: 1.2vw;
+        @include desktop {
+            height: 100% !important;
+            width: 100%;
         }
-      }
-      .services-text{
-        @include mobile {
-          font-size: 12.2vw;
-          line-height: 7.8vw;
-
-        }
-        @include tablet {
-          font-size: 12.2vw;
-          line-height: 7.8vw;
-        }
-        color: #0D47A1;
-        font-size: 10.2vw;
-        line-height: 7.2vw;
-
-        .thin-text{
-          font-family: 'bebasRegular' !important;
-        }
-        .thinner-text{
-          font-family: 'bebasLight' !important;
-        }
-      }
-  }
-
-  //Contact Styles
-  /*Contact Styles*/
-  #contact-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
-    background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
-    background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
-    @include angle(both);
-
-    height: 475px !important;
-    /*background-image: url(../img/what-we-offer-bg.png) !important;
+        background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+        background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
+        @include angle(both, true);
+        /*background-image: url(../img/what-we-offer-bg.png) !important;
     background-size: 100% 100%;
     background-repeat: no-repeat;*/
-      .main-title{
-        @include mobile {
-          padding-top: 30px;
-          padding-bottom: 30px;
+        .main-title {
+            padding-top: 40px;
         }
-        @include tablet {
-          padding-top: 30px;
-          padding-bottom: 30px;
-        }
-        padding-top: 20px;
-      }
-      .contact-text{
-        @include mobile {
-          font-size: 15vw;
-          text-align: center !important;
-          line-height: 33px;
-        }
-        @include tablet {
-          font-size: 15vw;
-          text-align: center !important;
-          line-height: 57px;
-        }
-        color: white;
-        font-size: 10vw;
-        text-align: right !important;
-        line-height: 7.1vw;
-
-        .thin-text{
-          @include mobile {
-            font-size: 17vw;
-          }
-          @include tablet {
-            font-size: 17vw;
-          }
-          font-family: 'bebasLight' !important;
-          font-size: 10vw !important;
-
-        }
-        .thinner-text{
-          font-family: 'bebasThin' !important;
-        }
-      }
-    #textarea{
-      float: none !important;
-    }
-  }
-
-  //Footer Content Styles
-  /*Footer Content Styles*/
-  #footer-block{
-    @include mobile {
-      height: 100% !important;
-      width: 100% !important;
-    }
-    @include tablet {
-      height: 100% !important;
-      width: 100% !important;
-    }
-  text-align: center;
-    #first-footer{
-
-      @include angle(before, true);
-      height: 250px !important;
-      background-color: #BDBDBD;
-      color: white;
-      font-family: 'bebasRegular' !important;
-      font-size: 1.2vw;
-
-        #footer-logo{
-          @include mobile {
-            display: block;
-            margin: 0 auto;
-            float: none !important;
-
-          }
-          @include tablet {
-            display: block;
-            margin: 0 auto;
-            float: none !important;
-          }
-          display: block;
-          margin: 0 auto;
-          padding-top: 10px;
-          float: right;
-        }
-        #footer-caption-box{
-          margin-top: 20px;
-          @include tablet {
-            margin-top: 0;
-          }
-          #footer-caption-text{
+        .why-text {
             @include mobile {
-              font-size: 2.4vw;
+                color: white;
+                font-size: 11vw;
+                line-height: 7.4vw;
             }
             @include tablet {
-              font-size: 2.4vw;
-              margin-bottom: 20px;
+                color: white;
+                font-size: 12vw;
+                line-height: 7.9vw;
             }
-          }
+            @include desktop {
+                color: white;
+                font-size: 13vw;
+                line-height: 8.7vw;
+            }
+            color: white;
+            font-size: 8vw;
+            line-height: 5.2vw;
+            .bold-text {
+                font-weight: 400;
+                font-family: 'bebasBold';
+            }
+            .thin-text {
+                font-weight: 200;
+                font-family: 'bebaslight';
+            }
+            .thinner-text {
+                font-weight: 100;
+                font-family: 'bebasThin';
+            }
+        }
+        #why-sub-text {
+            @include mobile {
+                font-size: 3.8vw !important;
+                top: -35px;
+                position: relative;
+            }
+            @include tablet {
+                font-size: 4.0vw !important;
+                top: -35px;
+                position: relative;
+            }
+            @include desktop {
+                font-size: 3vw !important;
+                top: -35px;
+                position: relative;
+            }
+            width: 100%;
+            color: white !important;
+            font-size: 1.9vw !important;
+            font-family: 'bebasRegular' !important;
+        }
+        hr {
+            @include mobile {
+                margin-right: 170px;
+                position: relative;
+                top: -18px;
+            }
+            @include tablet {
+                margin-right: 310px;
+                position: relative;
+                top: -18px;
+            }
+            @include desktop {
+                margin-right: 390px;
+                position: relative;
+                top: -25px;
+            }
+            margin-right: 480px;
         }
     }
-    #second-footer{
-      height: 45px !important;
-      background-color: #424242;
-      color: white;
-      #footerCopy{
-        display: inline;
+    //Divider Styles
+    /*Divider Styles*/
+    .first-divider {
+        @include mobile {
+            height: 140px !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 240px !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 260px !important;
+            width: 100% !important;
+        }
+        height: 300px !important;
+        width: 100%;
+        background-image: url("../img/first-divider.png") !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .second-divider {
+        @include mobile {
+            height: 140px !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 240px !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 260px !important;
+            width: 100% !important;
+        }
+        height: 300px !important;
+        width: 100%;
+        background-image: url("../img/second-divider.png") !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    //How Content Styles
+    /*How Content Styles*/
+    #how-block {
+        @include mobile {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        background-image: -webkit-gradient(linear, 0 0, 960.5 0, color-stop(0.019, #0097f1), color-stop(0.271, #00a1f1), to(#00b3f1));
+        background-image: -webkit-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+        background-image: -moz-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+        background-image: -o-linear-gradient(360deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+        background-image: linear-gradient(90deg, #0097f1 1.9%, #00a1f1 27.1%, #00b3f1);
+        @include angle(both, after);
+        /*background-image: url(../img/how-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+        .main-title {
+            padding-top: 30px;
+        }
+        .how-text {
+            @include mobile {
+                color: white;
+                font-size: 11vw;
+                line-height: 7.4vw;
+            }
+            @include tablet {
+                color: white;
+                font-size: 11.9vw;
+                line-height: 7.7vw;
+            }
+            @include desktop {
+                color: white;
+                font-size: 12.3vw;
+                line-height: 7.7vw;
+            }
+            color: white;
+            font-size: 8vw;
+            line-height: 5.2vw;
+            .bold-text {
+                font-weight: 400;
+                font-family: 'bebasBold';
+            }
+            .thin-text {
+                font-weight: 200;
+                font-family: 'bebaslight';
+            }
+            .thinner-text {
+                font-weight: 100;
+                font-family: 'bebasThin';
+            }
+        }
+        #how-sub-text {
+            @include mobile {
+                font-size: 3.8vw !important;
+                top: -8px;
+                position: relative;
+            }
+            @include tablet {
+                font-size: 4.0vw !important;
+                top: -8px;
+                position: relative;
+            }
+            @include desktop {
+                font-size: 3.0vw !important;
+                top: -8px;
+                position: relative;
+            }
+            width: 100%;
+            color: white !important;
+            font-size: 1.8vw !important;
+            font-family: 'bebasRegular' !important;
+        }
+    }
+    //What Do We Offer Content Styles
+    /*What Do We Offer Content Styles*/
+    #what-block {
+        @include mobile {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+        background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
+        @include angle(both, true);
+        /*background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+        .main-title {
+            padding-top: 40px;
+        }
+        .what-text {
+            @include mobile {
+                color: white;
+                font-size: 11vw;
+                line-height: 7.4vw;
+            }
+            @include tablet {
+                color: white;
+                font-size: 11.9vw;
+                line-height: 7.7vw;
+            }
+            @include desktop {
+                color: white;
+                font-size: 13vw;
+                line-height: 8.7vw;
+            }
+            color: white;
+            font-size: 8vw;
+            line-height: 5.2vw;
+            .bold-text {
+                font-weight: 400;
+                font-family: 'bebasBold';
+            }
+            .thin-text {
+                font-weight: 200;
+                font-family: 'bebaslight';
+            }
+            .thinner-text {
+                font-weight: 100;
+                font-family: 'bebasThin';
+            }
+            hr {
+                @include mobile {
+                    margin-right: 27px;
+                    position: relative;
+                    top: -18px;
+                }
+                @include tablet {
+                    margin-right: 33px;
+                    position: relative;
+                    top: -18px;
+                }
+                @include desktop {
+                    margin-right: 40px;
+                    position: relative;
+                    top: -25px;
+                }
+                margin-right: 80px;
+            }
+        }
+        #what-sub-text {
+            @include mobile {
+                font-size: 3.8vw !important;
+                top: -34px;
+                position: relative;
+            }
+            @include tablet {
+                font-size: 4.0vw !important;
+                top: -37px;
+                position: relative;
+            }
+            @include desktop {
+                font-size: 3.0vw !important;
+                top: -30px;
+                position: relative;
+            }
+            width: 100%;
+            color: white !important;
+            font-size: 1.8vw !important;
+            font-family: 'bebasRegular' !important;
+        }
+    }
+    //What Do We Offer Content Styles
+    /*What Do We Offer Content Styles*/
+    #analysis-block {
+        @include mobile {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        background-image: url("../img/analysis-bg.png") !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        #analysis-list {
+            @include mobile {
+                margin-top: 40px;
+                margin-bottom: 30px;
+                margin-right: 35px;
+            }
+            @include tablet {
+                margin-top: 40px;
+                margin-bottom: 30px;
+                margin-right: 35px;
+            }
+            @include desktop {
+                margin-top: 60px;
+                margin-bottom: 60px;
+                margin-right: 50px;
+            }
+            margin-top: 80px;
+            line-height: 0.5vw;
+            .list-head {
+                @include mobile {
+                    font-size: 2.3vw;
+                }
+                @include tablet {
+                    font-size: 2.3vw;
+                }
+                @include desktop {
+                    font-size: 2.3vw;
+                }
+                font-family: 'bebasBold';
+                color: #0D47A1;
+                font-size: 1.5vw;
+                .list-description {
+                    @include mobile {
+                        font-size: 3.3vw;
+                    }
+                    @include tablet {
+                        font-size: 3.3vw;
+                    }
+                    @include desktop {
+                        font-size: 3.3vw;
+                    }
+                    color: white;
+                    font-size: 2vw;
+                    font-weight: 200;
+                    text-align: right;
+                    font-family: 'bebasLight' !important;
+                }
+            }
+        }
+    }
+    //Services Offer Content Styles
+    /*Services Offer Content Styles*/
+    #services-block {
+        @include mobile {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include angle(both, true);
+        background-image: url("../img/our-services-bg.png") !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .main-title {
+            @include mobile {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            @include tablet {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            @include desktop {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            padding-top: 80px;
+        }
+        ul {
+            .services-list {
+                @include mobile {
+                    margin-bottom: 2px;
+                    font-size: 1.5vw;
+                }
+                @include tablet {
+                    margin-bottom: 2px;
+                    font-size: 1.6vw;
+                }
+                @include desktop {
+                    margin-bottom: 2px;
+                    font-size: 1.6vw;
+                }
+                margin-bottom: 15px;
+                text-align: right;
+                color: #0D47A1;
+                font-family: 'bebasRegular' !important;
+                font-size: 1.2vw;
+            }
+        }
+        .services-text {
+            @include mobile {
+                font-size: 12.2vw;
+                line-height: 7.8vw;
+            }
+            @include tablet {
+                font-size: 12.2vw;
+                line-height: 7.8vw;
+            }
+            @include desktop {
+                font-size: 12.2vw;
+                line-height: 7.8vw;
+            }
+            color: #0D47A1;
+            font-size: 10.2vw;
+            line-height: 7.2vw;
+            .thin-text {
+                font-family: 'bebasRegular' !important;
+            }
+            .thinner-text {
+                font-family: 'bebasLight' !important;
+            }
+        }
+    }
+    //Contact Styles
+    /*Contact Styles*/
+    #contact-block {
+        @include mobile {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+            padding-bottom: 40px;
+        }
+        background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
+        background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: -moz-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: -o-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
+        background-image: linear-gradient(270deg, #0b1fa9 2.8%, #091b94);
+        @include angle(both);
+        height: 475px !important;
+        /*background-image: url(../img/what-we-offer-bg.png) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+        .main-title {
+            @include mobile {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            @include tablet {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            padding-top: 20px;
+        }
+        .contact-text {
+            @include mobile {
+                font-size: 15vw;
+                text-align: center !important;
+                line-height: 33px;
+            }
+            @include tablet {
+                font-size: 15vw;
+                text-align: center !important;
+                line-height: 57px;
+            }
+            color: white;
+            font-size: 10vw;
+            text-align: right !important;
+            line-height: 7.1vw;
+            .thin-text {
+                @include mobile {
+                    font-size: 17vw;
+                }
+                @include tablet {
+                    font-size: 17vw;
+                }
+                font-family: 'bebasLight' !important;
+                font-size: 10vw !important;
+            }
+            .thinner-text {
+                font-family: 'bebasThin' !important;
+            }
+        }
+        #textarea {
+            float: none !important;
+        }
+    }
+    //Footer Content Styles
+    /*Footer Content Styles*/
+    #footer-block {
+        @include mobile {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include tablet {
+            height: 100% !important;
+            width: 100% !important;
+        }
+        @include desktop {
+            height: 100% !important;
+            width: 100% !important;
+        }
         text-align: center;
-        display: inline-block;
-          .footerText{
-            @include mobile {
-              font-size: 1.7vw;
+        #first-footer {
+            @include angle(before, true);
+            height: 250px !important;
+            background-color: #BDBDBD;
+            color: white;
+            font-family: 'bebasRegular' !important;
+            font-size: 1.2vw;
+            #footer-logo {
+                @include mobile {
+                    display: block;
+                    margin: 0 auto;
+                    float: none !important;
+                }
+                @include tablet {
+                    display: block;
+                    margin: 0 auto;
+                    float: none !important;
+                }
+                @include desktop {
+                    display: block;
+                    margin: 0 auto;
+                    float: right;
+                }
+                display: block;
+                margin: 0 auto;
+                padding-top: 10px;
+                float: right;
             }
-            @include tablet {
-              font-size: 1.7vw;
-            }
-            display: inline-block;
-            a{
-              color: white;
-            }
-          }
+            #footer-caption-box {
+                margin-top: 20px;
+                @include tablet {
+                    margin-top: 0;
+                }
+                #footer-caption-text {
+                    @include mobile {
+                        font-size: 2.4vw;
+                    }
+                    @include tablet {
+                        font-size: 2.4vw;
+                        margin-bottom: 20px;
+                    }
+                    @include desktop {
+                        font-size: 1.6vw;
 
-      }
+                    }
+                }
+            }
+        }
+        #second-footer {
+            height: 45px !important;
+            background-color: #424242;
+            color: white;
+            #footerCopy {
+                display: inline;
+                text-align: center;
+                display: inline-block;
+                .footerText {
+                    @include mobile {
+                        font-size: 1.7vw;
+                    }
+                    @include tablet {
+                        font-size: 1.7vw;
+                    }
+                    @include desktop {
+                        padding-top: 10px;
+                        font-size: 1.3vw;
+                    }
+                    display: inline-block;
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
     }
-  }
 }
-
 //NAV Styles
 /*Nav Styles */
-
-nav{
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  #tagNav{
-    margin-left: 20px;
-    position: relative;
-    z-index: 99;
-    margin-top: 25px;
-    display: inline-block;
-    font-size: 1.1vw;
-
-      li{
-        a{
-          color: #0a1ea4;
-          font-family: 'bebasRegular' !important;
-          font-size: 1.3vw;
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    #tagNav {
+        margin-left: 20px;
+        position: relative;
+        z-index: 99;
+        margin-top: 25px;
+        display: inline-block;
+        font-size: 1.1vw;
+        li {
+            a {
+                color: #0a1ea4;
+                font-family: 'bebasRegular' !important;
+                font-size: 1.3vw;
+            }
+            a:hover {
+                background-color: rgba(10, 30, 164, .5);
+                color: white;
+                border-radius: 10px;
+            }
         }
-        a:hover{
-          background-color: rgba(10, 30, 164, .5);
-          color: white;
-          border-radius: 10px;
+    }
+    #menu-burger {
+        @include mobile {
+            font-size: 5.5vw !important;
         }
-      }
-  }
-  #menu-burger{
-    float: right;
-    margin-top: 15px;
-    margin-right: 25px;
-    color: #0D47A1;
-    font-size: 2.4vw !important;
-  }
-
+        @include tablet {
+            font-size: 3.5vw !important;
+        }
+        @include desktop {
+            font-size: 3.5vw !important;
+        }
+        float: right;
+        margin-top: 15px;
+        margin-right: 25px;
+        color: #0D47A1;
+        font-size: 2.4vw !important;
+    }
 }
-
 //Ebook Styles
-#showEbook{
-  z-index: 999;
-  position: fixed;
-  top: 50.5%;
-  right: 0.5%;
-
+#showEbook {
+    z-index: 999;
+    position: fixed;
+    top: 50.5%;
+    right: 0.5%;
 }
-.fa-arrow-circle-o-left{
-  color: black;
+.fa-arrow-circle-o-left {
+    color: black;
 }
-.pop-out{
-  z-index: 99;
-  position: fixed;
-  top: 50%;
-  right: 0.2%;
-  background-color: orange;
-  height: 300px;
-  display: inline-block;
-  border-radius: 5px;
-    #ebook-ad{
-      @include mobile {
-        width: 350px !important;
-
-      }
-      @include tablet {
-        width: 480px !important;
-      }
-      width: 100%;
-      float: right;
-      font-size: 2.5vw;
-      margin-top: 40px;
-        #ebook-img{
-          float: left;
-          margin-right: 30px;
-          margin-left: 15px;
+.pop-out {
+    z-index: 99;
+    position: fixed;
+    top: 50%;
+    right: 0.2%;
+    background-color: orange;
+    height: 300px;
+    display: inline-block;
+    border-radius: 5px;
+    #ebook-ad {
+        @include mobile {
+            width: 350px !important;
         }
-        #ebook-text{
-          @include mobile {
-            line-height: 3.9vw;
-
-          }
-          @include tablet {
-            line-height: 3.9vw;
-          }
-          line-height: 2.5vw;
-          width: 100%;
-          color: white;
-
-          #ebook-bold{
+        @include tablet {
+            width: 480px !important;
+        }
+        @include desktop {
+            width: 500px !important;
+        }
+        width: 100%;
+        float: right;
+        font-size: 2.5vw;
+        margin-top: 40px;
+        #ebook-img {
+            float: left;
+            margin-right: 30px;
+            margin-left: 15px;
+        }
+        #ebook-text {
             @include mobile {
-              font-size: 5vw !important;
-
+                line-height: 3.9vw;
             }
             @include tablet {
-              font-size: 5vw !important;
+                line-height: 3.9vw;
             }
-            display: inline-block;
-            font-family: 'bebasBold' !important;
-            font-size: 2.7vw !important;
-          }
-          #ebook-thin{
-            @include mobile {
-              font-size: 5vw !important;
-
+            @include desktop {
+                line-height: 3.9vw;
             }
-            @include tablet {
-              font-size: 5vw !important;
+            line-height: 2.5vw;
+            width: 100%;
+            color: white;
+            #ebook-bold {
+                @include mobile {
+                    font-size: 5vw !important;
+                }
+                @include tablet {
+                    font-size: 5vw !important;
+                }
+                @include desktop {
+                    font-size: 5vw !important;
+                }
+                display: inline-block;
+                font-family: 'bebasBold' !important;
+                font-size: 2.7vw !important;
             }
-            display: inline-block;
-            font-family: 'bebasLight' !important;
-            font-size: 2.7vw !important;
-          }
-          #ebook-regular{
-            @include mobile {
-              font-size: 3vw !important;
-
+            #ebook-thin {
+                @include mobile {
+                    font-size: 5vw !important;
+                }
+                @include tablet {
+                    font-size: 5vw !important;
+                }
+                @include desktop {
+                    font-size: 5vw !important;
+                }
+                display: inline-block;
+                font-family: 'bebasLight' !important;
+                font-size: 2.7vw !important;
             }
-            @include tablet {
-              font-size: 3vw !important;
+            #ebook-regular {
+                @include mobile {
+                    font-size: 3vw !important;
+                }
+                @include tablet {
+                    font-size: 3vw !important;
+                }
+                @include desktop {
+                    font-size: 2vw !important;
+                }
+                display: inline-block;
+                font-family: 'bebasRegular' !important;
+                font-size: 1.7vw !important;
             }
-            display: inline-block;
-            font-family: 'bebasRegular' !important;
-            font-size: 1.7vw !important;
-          }
-          #ebook-small{
-            @include mobile {
-              font-size: 2.4vw !important;
-
+            #ebook-small {
+                @include mobile {
+                    font-size: 2.4vw !important;
+                }
+                @include tablet {
+                    font-size: 2.4vw !important;
+                }
+                @include desktop {
+                    font-size: 1.6vw !important;
+                }
+                font-family: 'bebasRegular' !important;
+                font-size: 1.2vw !important;
             }
-            @include tablet {
-              font-size: 2.4vw !important;
-            }
-            font-family: 'bebasRegular' !important;
-            font-size: 1.2vw !important;
-          }
         }
     }
 }
-
 //Sticky Nav on Scroll Style
-
 .sticky {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  border-top: 0;
-  background-color: white;
-  -webkit-box-shadow:0 15px 15px -15px #000;
-  box-shadow:0 15px 15px -15px #000;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    background-color: white;
+    -webkit-box-shadow: 0 15px 15px -15px #000;
+    box-shadow: 0 15px 15px -15px #000;
 }
-
 .nonSticky {
-  position: relative;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  border-top: 0;
-  background-color: white;
-  -webkit-box-shadow:0 8px 8px -8px #000;
-  box-shadow:0 8px 8px -8px #000;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    background-color: white;
+    -webkit-box-shadow: 0 8px 8px -8px #000;
+    box-shadow: 0 8px 8px -8px #000;
 }

@@ -53,15 +53,21 @@ body {
     width: 100%; }
   #skewed #header {
     height: 625px !important;
-    background-image: url(../img/header-bg.png) !important;
+    background-image: url("../img/header-bg.png") !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
       #skewed #header {
-        height: 100% !important; } }
+        height: 100% !important;
+        width: 100%; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       #skewed #header {
-        height: 100% !important; } }
+        height: 100% !important;
+        width: 100%; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed #header {
+        height: 100% !important;
+        width: 100%; } }
     #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
       display: block;
       margin: 0 auto;
@@ -85,6 +91,14 @@ body {
           width: 100%;
           height: auto;
           max-width: 250px; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #header .header-wrapper section .logo-wrapper #brand-logo {
+          display: block;
+          margin: 0 auto;
+          padding-top: 50px;
+          width: 100%;
+          height: auto;
+          max-width: 420px; } }
     #skewed #header .header-wrapper section #header-title {
       text-align: center;
       font-size: 3.5vw;
@@ -102,6 +116,12 @@ body {
           font-size: 5.5vw;
           font-family: 'kenyanRegular' !important;
           padding-bottom: 20px; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #header .header-wrapper section #header-title {
+          text-align: center;
+          font-size: 5.5vw;
+          font-family: 'kenyanRegular' !important;
+          padding-bottom: 30px; } }
   #skewed #why-exist-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -121,6 +141,10 @@ body {
       #skewed #why-exist-block {
         height: 100% !important;
         width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed #why-exist-block {
+        height: 100% !important;
+        width: 100%; } }
     #skewed #why-exist-block:before, #skewed #why-exist-block:after {
       background: inherit;
       content: '';
@@ -155,6 +179,11 @@ body {
           color: white;
           font-size: 12vw;
           line-height: 7.9vw; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #why-exist-block .why-text {
+          color: white;
+          font-size: 13vw;
+          line-height: 8.7vw; } }
       #skewed #why-exist-block .why-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -179,6 +208,11 @@ body {
           font-size: 4.0vw !important;
           top: -35px;
           position: relative; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #why-exist-block #why-sub-text {
+          font-size: 3vw !important;
+          top: -35px;
+          position: relative; } }
     #skewed #why-exist-block hr {
       margin-right: 480px; }
       @media (max-width: 425px) {
@@ -191,10 +225,15 @@ body {
           margin-right: 310px;
           position: relative;
           top: -18px; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #why-exist-block hr {
+          margin-right: 390px;
+          position: relative;
+          top: -25px; } }
   #skewed .first-divider {
     height: 300px !important;
     width: 100%;
-    background-image: url(../img/first-divider.png) !important;
+    background-image: url("../img/first-divider.png") !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
@@ -204,11 +243,15 @@ body {
     @media (min-width: 768px) and (max-width: 1023px) {
       #skewed .first-divider {
         height: 240px !important;
+        width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed .first-divider {
+        height: 260px !important;
         width: 100% !important; } }
   #skewed .second-divider {
     height: 300px !important;
     width: 100%;
-    background-image: url(../img/second-divider.png) !important;
+    background-image: url("../img/second-divider.png") !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
@@ -218,6 +261,10 @@ body {
     @media (min-width: 768px) and (max-width: 1023px) {
       #skewed .second-divider {
         height: 240px !important;
+        width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed .second-divider {
+        height: 260px !important;
         width: 100% !important; } }
   #skewed #how-block {
     background-image: -webkit-gradient(linear, 0 0, 960.5 0, color-stop(0.019, #0097f1), color-stop(0.271, #00a1f1), to(#00b3f1));
@@ -235,6 +282,10 @@ body {
         height: 100% !important;
         width: 100% !important; } }
     @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #how-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
       #skewed #how-block {
         height: 100% !important;
         width: 100% !important; } }
@@ -272,6 +323,11 @@ body {
           color: white;
           font-size: 11.9vw;
           line-height: 7.7vw; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #how-block .how-text {
+          color: white;
+          font-size: 12.3vw;
+          line-height: 7.7vw; } }
       #skewed #how-block .how-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -296,6 +352,11 @@ body {
           font-size: 4.0vw !important;
           top: -8px;
           position: relative; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #how-block #how-sub-text {
+          font-size: 3.0vw !important;
+          top: -8px;
+          position: relative; } }
   #skewed #what-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -312,6 +373,10 @@ body {
         height: 100% !important;
         width: 100% !important; } }
     @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #what-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
       #skewed #what-block {
         height: 100% !important;
         width: 100% !important; } }
@@ -349,6 +414,11 @@ body {
           color: white;
           font-size: 11.9vw;
           line-height: 7.7vw; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #what-block .what-text {
+          color: white;
+          font-size: 13vw;
+          line-height: 8.7vw; } }
       #skewed #what-block .what-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -370,6 +440,11 @@ body {
             margin-right: 33px;
             position: relative;
             top: -18px; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #what-block .what-text hr {
+            margin-right: 40px;
+            position: relative;
+            top: -25px; } }
     #skewed #what-block #what-sub-text {
       width: 100%;
       color: white !important;
@@ -385,8 +460,13 @@ body {
           font-size: 4.0vw !important;
           top: -37px;
           position: relative; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #what-block #what-sub-text {
+          font-size: 3.0vw !important;
+          top: -30px;
+          position: relative; } }
   #skewed #analysis-block {
-    background-image: url(../img/analysis-bg.png) !important;
+    background-image: url("../img/analysis-bg.png") !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
@@ -394,6 +474,10 @@ body {
         height: 100% !important;
         width: 100% !important; } }
     @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #analysis-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
       #skewed #analysis-block {
         height: 100% !important;
         width: 100% !important; } }
@@ -410,6 +494,11 @@ body {
           margin-top: 40px;
           margin-bottom: 30px;
           margin-right: 35px; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #analysis-block #analysis-list {
+          margin-top: 60px;
+          margin-bottom: 60px;
+          margin-right: 50px; } }
       #skewed #analysis-block #analysis-list .list-head {
         font-family: 'bebasBold';
         color: #0D47A1;
@@ -418,6 +507,9 @@ body {
           #skewed #analysis-block #analysis-list .list-head {
             font-size: 2.3vw; } }
         @media (min-width: 768px) and (max-width: 1023px) {
+          #skewed #analysis-block #analysis-list .list-head {
+            font-size: 2.3vw; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
           #skewed #analysis-block #analysis-list .list-head {
             font-size: 2.3vw; } }
         #skewed #analysis-block #analysis-list .list-head .list-description {
@@ -432,10 +524,13 @@ body {
           @media (min-width: 768px) and (max-width: 1023px) {
             #skewed #analysis-block #analysis-list .list-head .list-description {
               font-size: 3.3vw; } }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            #skewed #analysis-block #analysis-list .list-head .list-description {
+              font-size: 3.3vw; } }
   #skewed #services-block {
     position: relative;
     z-index: 1;
-    background-image: url(../img/our-services-bg.png) !important;
+    background-image: url("../img/our-services-bg.png") !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
@@ -443,6 +538,10 @@ body {
         height: 100% !important;
         width: 100% !important; } }
     @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #services-block {
+        height: 100% !important;
+        width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
       #skewed #services-block {
         height: 100% !important;
         width: 100% !important; } }
@@ -474,6 +573,10 @@ body {
         #skewed #services-block .main-title {
           padding-top: 30px;
           padding-bottom: 30px; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #services-block .main-title {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
     #skewed #services-block ul .services-list {
       margin-bottom: 15px;
       text-align: right;
@@ -488,6 +591,10 @@ body {
         #skewed #services-block ul .services-list {
           margin-bottom: 2px;
           font-size: 1.6vw; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #services-block ul .services-list {
+          margin-bottom: 2px;
+          font-size: 1.6vw; } }
     #skewed #services-block .services-text {
       color: #0D47A1;
       font-size: 10.2vw;
@@ -497,6 +604,10 @@ body {
           font-size: 12.2vw;
           line-height: 7.8vw; } }
       @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #services-block .services-text {
+          font-size: 12.2vw;
+          line-height: 7.8vw; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #services-block .services-text {
           font-size: 12.2vw;
           line-height: 7.8vw; } }
@@ -524,6 +635,11 @@ body {
       #skewed #contact-block {
         height: 100% !important;
         width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed #contact-block {
+        height: 100% !important;
+        width: 100% !important;
+        padding-bottom: 40px; } }
     #skewed #contact-block:before, #skewed #contact-block:after {
       background: inherit;
       content: '';
@@ -590,6 +706,10 @@ body {
       #skewed #footer-block {
         height: 100% !important;
         width: 100% !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed #footer-block {
+        height: 100% !important;
+        width: 100% !important; } }
     #skewed #footer-block #first-footer {
       position: relative;
       z-index: 1;
@@ -627,6 +747,11 @@ body {
             display: block;
             margin: 0 auto;
             float: none !important; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #footer-block #first-footer #footer-logo {
+            display: block;
+            margin: 0 auto;
+            float: right; } }
       #skewed #footer-block #first-footer #footer-caption-box {
         margin-top: 20px; }
         @media (min-width: 768px) and (max-width: 1023px) {
@@ -639,6 +764,9 @@ body {
           #skewed #footer-block #first-footer #footer-caption-box #footer-caption-text {
             font-size: 2.4vw;
             margin-bottom: 20px; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #footer-block #first-footer #footer-caption-box #footer-caption-text {
+            font-size: 1.6vw; } }
     #skewed #footer-block #second-footer {
       height: 45px !important;
       background-color: #424242;
@@ -655,6 +783,10 @@ body {
           @media (min-width: 768px) and (max-width: 1023px) {
             #skewed #footer-block #second-footer #footerCopy .footerText {
               font-size: 1.7vw; } }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            #skewed #footer-block #second-footer #footerCopy .footerText {
+              padding-top: 10px;
+              font-size: 1.3vw; } }
           #skewed #footer-block #second-footer #footerCopy .footerText a {
             color: white; }
 
@@ -684,6 +816,15 @@ nav {
     margin-right: 25px;
     color: #0D47A1;
     font-size: 2.4vw !important; }
+    @media (max-width: 425px) {
+      nav #menu-burger {
+        font-size: 5.5vw !important; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      nav #menu-burger {
+        font-size: 3.5vw !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      nav #menu-burger {
+        font-size: 3.5vw !important; } }
 
 #showEbook {
   z-index: 999;
@@ -714,6 +855,9 @@ nav {
     @media (min-width: 768px) and (max-width: 1023px) {
       .pop-out #ebook-ad {
         width: 480px !important; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      .pop-out #ebook-ad {
+        width: 500px !important; } }
     .pop-out #ebook-ad #ebook-img {
       float: left;
       margin-right: 30px;
@@ -728,6 +872,9 @@ nav {
       @media (min-width: 768px) and (max-width: 1023px) {
         .pop-out #ebook-ad #ebook-text {
           line-height: 3.9vw; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        .pop-out #ebook-ad #ebook-text {
+          line-height: 3.9vw; } }
       .pop-out #ebook-ad #ebook-text #ebook-bold {
         display: inline-block;
         font-family: 'bebasBold' !important;
@@ -736,6 +883,9 @@ nav {
           .pop-out #ebook-ad #ebook-text #ebook-bold {
             font-size: 5vw !important; } }
         @media (min-width: 768px) and (max-width: 1023px) {
+          .pop-out #ebook-ad #ebook-text #ebook-bold {
+            font-size: 5vw !important; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
           .pop-out #ebook-ad #ebook-text #ebook-bold {
             font-size: 5vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-thin {
@@ -748,6 +898,9 @@ nav {
         @media (min-width: 768px) and (max-width: 1023px) {
           .pop-out #ebook-ad #ebook-text #ebook-thin {
             font-size: 5vw !important; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          .pop-out #ebook-ad #ebook-text #ebook-thin {
+            font-size: 5vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-regular {
         display: inline-block;
         font-family: 'bebasRegular' !important;
@@ -758,6 +911,9 @@ nav {
         @media (min-width: 768px) and (max-width: 1023px) {
           .pop-out #ebook-ad #ebook-text #ebook-regular {
             font-size: 3vw !important; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          .pop-out #ebook-ad #ebook-text #ebook-regular {
+            font-size: 2vw !important; } }
       .pop-out #ebook-ad #ebook-text #ebook-small {
         font-family: 'bebasRegular' !important;
         font-size: 1.2vw !important; }
@@ -767,6 +923,9 @@ nav {
         @media (min-width: 768px) and (max-width: 1023px) {
           .pop-out #ebook-ad #ebook-text #ebook-small {
             font-size: 2.4vw !important; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          .pop-out #ebook-ad #ebook-text #ebook-small {
+            font-size: 1.6vw !important; } }
 
 .sticky {
   position: fixed;
