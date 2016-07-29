@@ -23,18 +23,20 @@ body {
     /*Header Content Styles*/
     #header {
         @include mobile {
-            height: 100vh !important;
+            height: 100% !important;
             width: 100%;
         }
         @include tablet {
-            height: 100vh !important;
+            height: 100% !important;
             width: 100%;
         }
         @include desktop {
+
             height: 100vh !important;
             width: 100%;
         }
         @include xlarge {
+
             height: 100vh !important;
             width: 100%;
         }
@@ -45,6 +47,12 @@ body {
         background-repeat: no-repeat;
         .header-wrapper {
             section {
+                @include desktop {
+                padding-top: 170px;
+                }
+                @include xlarge {
+                padding-top: 180px;
+                }
                 .logo-wrapper {
                     #brand-logo {
                         @include mobile {
@@ -105,13 +113,13 @@ body {
                         text-align: center;
                         font-size: 5.5vw;
                         font-family: 'kenyanRegular' !important;
-                        padding-bottom: 30px;
+                        padding-bottom: 20px;
                     }
                     @include xlarge {
                         text-align: center;
                         font-size: 5.5vw;
                         font-family: 'kenyanRegular' !important;
-                        padding-bottom: 30px;
+                        padding-bottom: 20px;
                     }
                     text-align: center;
                     font-size: 3.5vw;
