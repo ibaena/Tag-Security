@@ -67,14 +67,17 @@ $(document).ready(function() {
     let stickyNav = function() {
 
         let scrollTop = $(window).scrollTop();
+        let fired = true;
 
-        if (scrollTop > stickyNavTop) {
+        if (scrollTop > stickyNavTop && fired === true) {
+        console.log('Hey im greater scrolltop');
             $('.nav').addClass('sticky');
             $('.nav').addClass('animated slideInDown');
             $('.nav').removeClass('slideInUp');
 
             showNav = true;
-            if (showNav === true) {
+
+            if (showNav === true ) {
                 //links
                 $('#tagNav').removeClass('hidden');
                 $('#tagNav').removeClass('animated fadeOut');
@@ -83,16 +86,17 @@ $(document).ready(function() {
                 $('#menu-burger').removeClass('fadeIn');
                 $('#menu-burger').addClass('animated fadeOut');
             }
-
-        } else {
+            fired = false;
+        } else if (scrollTop < stickyNavTop){
+            console.log(fired)
             $('.nav').removeClass('sticky');
             $('.nav').removeClass('slideInDown');
             $('.nav').addClass('slideInUp');
 
-            showNav = !showNav;
+            showNav = false;
             if (showNav === false) {
                 $('#tagNav').removeClass('animated slideInLeft');
-                //$('#tagNav').addClass('animated fadeOut');
+                $('#tagNav').addClass('animated fadeOut');
 
                 //menu-burger
                 $('#menu-burger').removeClass('fadeOut');
@@ -110,7 +114,7 @@ $(document).ready(function() {
         stickyNav();
     });
 
-    let launchSite = function() {
+    /*let launchSite = function() {
         setTimeout(function() {
             $('html, body').animate({
                 scrollTop: $('#header-title').offset().top
@@ -122,6 +126,6 @@ $(document).ready(function() {
         })
     };
 
-    setTimeout(launchSite, 5000);
+    setTimeout(launchSite, 5000);*/
 
 });
