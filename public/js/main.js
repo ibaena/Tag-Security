@@ -69,12 +69,13 @@ $(document).ready(function() {
         let scrollTop = $(window).scrollTop();
         let fired = true;
 
-        if (scrollTop > stickyNavTop && fired === true) {
+        if (scrollTop >= stickyNavTop && fired === true) {
+            showNav = !showNav;
+
             $('.nav').addClass('sticky');
             $('.nav').addClass('animated slideInDown');
             $('.nav').removeClass('slideInUp');
 
-            showNav = true;
 
             if (showNav === true ) {
                 //links
