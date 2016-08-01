@@ -70,7 +70,6 @@ $(document).ready(function() {
         let fired = true;
 
         if (scrollTop > stickyNavTop && fired === true) {
-        console.log('Hey im greater scrolltop');
             $('.nav').addClass('sticky');
             $('.nav').addClass('animated slideInDown');
             $('.nav').removeClass('slideInUp');
@@ -88,7 +87,6 @@ $(document).ready(function() {
             }
             fired = false;
         } else if (scrollTop < stickyNavTop){
-            console.log(fired)
             $('.nav').removeClass('sticky');
             $('.nav').removeClass('slideInDown');
             $('.nav').addClass('slideInUp');
@@ -114,7 +112,7 @@ $(document).ready(function() {
         stickyNav();
     });
 
-    /*let launchSite = function() {
+    let launchSite = function() {
         setTimeout(function() {
             $('html, body').animate({
                 scrollTop: $('#header-title').offset().top
@@ -126,6 +124,6 @@ $(document).ready(function() {
         })
     };
 
-    setTimeout(launchSite, 5000);*/
+    setTimeout(launchSite, 5000);
 
 });
