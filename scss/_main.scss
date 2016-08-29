@@ -724,22 +724,22 @@ PLUGIN STYLES
         #why-sub-text {
             @include mobile {
                 font-size: 3.8vw !important;
-                top: -35px;
+                top: -25px;
                 position: relative;
             }
             @include tablet {
                 font-size: 1.75em !important;
-                top: -35px;
+                top: -25px;
                 position: relative;
             }
             @include desktop {
                 font-size: 2.3em !important;
-                top: -35px;
+                top: -25px;
                 position: relative;
             }
             @include xlarge {
                 font-size: 2.3vw !important;
-                top: -35px;
+                top: -25px;
                 position: relative;
             }
             width: 100%;
@@ -751,22 +751,22 @@ PLUGIN STYLES
             @include mobile {
                 width: 75%;
                 position: relative;
-                top: -18px;
+                top: -15px;
             }
             @include tablet {
                 width: 80%;
                 position: relative;
-                top: -18px;
+                top: -15px;
             }
             @include desktop {
                 margin-right: 390px;
                 position: relative;
-                top: -25px;
+                top: -15px;
             }
             @include xlarge {
               width: 50%;
                 position: relative;
-                top: -25px;
+                top: -15px;
             }
             margin-right: 480px;
         }
@@ -913,22 +913,22 @@ PLUGIN STYLES
               width: 80%;
               position: relative;
               float: left;
-              top: -25px;
+              top: -15px;
             }
             @include tablet {
                 position: relative;
-                top: -18px;
+                top: -15px;
                 margin-right: 80px;
             }
             @include desktop {
                 position: relative;
-                top: -28px;
+                top: -15px;
                 width: 90%;
                 float: left;
             }
             @include xlarge {
                 position: relative;
-                top: -28px;
+                top: -15px;
                 width: 450px;
                 float: left;
             }
@@ -937,7 +937,7 @@ PLUGIN STYLES
             @include mobile {
                 width: 90%;
                 font-size: 3.8vw !important;
-                top: -37px;
+                top: -25px;
                 position: relative;
             }
             @include tablet {
@@ -949,13 +949,13 @@ PLUGIN STYLES
             }
             @include desktop {
                 font-size: 3.0vw !important;
-                top: -38px;
+                top: -25px;
                 position: relative;
                 line-height: 1em;
             }
             @include xlarge {
                 font-size: 2.3vw !important;
-                top: -38px;
+                top: -25px;
                 position: relative;
                 line-height: 1em;
             }
@@ -1039,24 +1039,24 @@ PLUGIN STYLES
               width: 80%;
               position: relative;
               float: left;
-              top: -25px;
+              top: -15px;
             }
             @include tablet {
                 position: relative;
-                top: -18px;
+                top: -15px;
                 width: 90%;
                 float: left;
             }
             @include desktop {
                 margin-right: 40px;
                 position: relative;
-                top: -25px;
+                top: -15px;
             }
             @include xlarge {
                 float: left;
                 width: 450px;
                 position: relative;
-                top: -25px;
+                top: -15px;
             }
             margin-right: 80px;
         }
@@ -1064,7 +1064,7 @@ PLUGIN STYLES
             @include mobile {
               width: 90%;
                 font-size: 3.8vw !important;
-                top: -34px;
+                top: -25px;
                 position: relative;
             }
             @include tablet {
@@ -1076,13 +1076,13 @@ PLUGIN STYLES
             }
             @include desktop {
                 font-size: 3.0vw !important;
-                top: -30px;
+                top: -25px;
                 position: relative;
                 line-height: 1em;
             }
             @include xlarge {
                 font-size: 2.3vw !important;
-                top: -35px;
+                top: -25px;
                 position: relative;
                 line-height: 1em;
             }
