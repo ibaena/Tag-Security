@@ -4459,9 +4459,7 @@ PLUGIN STYLES
     #skewed #why-exist-block .main-title {
       padding-top: 40px; }
     #skewed #why-exist-block .why-text {
-      color: white;
-      font-size: 8vw;
-      line-height: 5.2vw; }
+      color: white; }
       @media (max-width: 425px) {
         #skewed #why-exist-block .why-text {
           color: white;
@@ -4475,13 +4473,13 @@ PLUGIN STYLES
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #why-exist-block .why-text {
           color: white;
-          font-size: 8.5em;
-          line-height: .65em; } }
+          font-size: 13em;
+          line-height: 8.7vw; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #why-exist-block .why-text {
           color: white;
-          font-size: 9em;
-          line-height: .65em; } }
+          font-size: 10vw;
+          line-height: 7vw; } }
       #skewed #why-exist-block .why-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
