@@ -4475,13 +4475,13 @@ PLUGIN STYLES
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #why-exist-block .why-text {
           color: white;
-          font-size: 13vw;
-          line-height: 8.7vw; } }
+          font-size: 8.5em;
+          line-height: .65em; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #why-exist-block .why-text {
           color: white;
-          font-size: 10vw;
-          line-height: 7vw; } }
+          font-size: 9em;
+          line-height: .65em; } }
       #skewed #why-exist-block .why-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }

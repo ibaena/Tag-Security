@@ -689,13 +689,13 @@ PLUGIN STYLES
             }
             @include desktop {
                 color: white;
-                font-size: 13vw;
-                line-height: 8.7vw;
+                font-size: 8.5em;
+                line-height: .65em;
             }
             @include xlarge {
                 color: white;
-                font-size: 10vw;
-                line-height: 7vw;
+                font-size: 9em;
+                line-height: .65em;
             }
             color: white;
             font-size: 8vw;
