@@ -707,6 +707,10 @@ PLUGIN STYLES
             .thin-text {
                 font-weight: 200;
                 font-family: 'bebaslight';
+                @include desktop{
+                  display: block;
+                  margin-top: 15px;
+                }
             }
             .thinner-text {
                 font-weight: 100;
@@ -725,7 +729,7 @@ PLUGIN STYLES
                 position: relative;
             }
             @include desktop {
-                font-size: 3vw !important;
+                font-size: 2.3em !important;
                 top: -35px;
                 position: relative;
             }
@@ -741,12 +745,12 @@ PLUGIN STYLES
         }
         hr {
             @include mobile {
-                margin-right: 170px;
+                width: 75%;
                 position: relative;
                 top: -18px;
             }
             @include tablet {
-                margin-right: 80px !important;
+                width: 80%;
                 position: relative;
                 top: -18px;
             }
@@ -873,39 +877,54 @@ PLUGIN STYLES
             .thin-text {
                 font-weight: 200;
                 font-family: 'bebaslight';
+                @include desktop{
+                  display: block;
+                  margin-top: 15px;
+                }
             }
             .thinner-text {
                 font-weight: 100;
                 font-family: 'bebasThin';
             }
-            hr {
-                @include mobile {
-                    margin-right: 27px;
-                    position: relative;
-                    top: -18px;
-                }
-                @include tablet {
-                    position: relative;
-                    // top: -18px;
-                    margin-right: 80px;
-                }
+        }
+        hr {
+            @include mobile {
+              width: 80%;
+              position: relative;
+              float: left;
+              top: -25px;
+            }
+            @include tablet {
+                position: relative;
+                top: -18px;
+                margin-right: 80px;
+            }
+            @include desktop{
+                position: relative;
+                top: -28px;
+                width: 90%;
+                float: left;
             }
         }
         #how-sub-text {
             @include mobile {
+                width: 90%;
                 font-size: 3.8vw !important;
-                top: -8px;
+                top: -37px;
                 position: relative;
             }
             @include tablet {
                 font-size: 1.75em !important;
-                top: -8px;
+                top: -25px;
                 position: relative;
+                width: 95%;
+                line-height: 1em;
             }
             @include desktop {
                 font-size: 3.0vw !important;
-                top: -8px;
+                top: -38px;
                 position: relative;
+                line-height: 1em;
             }
             @include xlarge {
                 font-size: 2.3vw !important;
@@ -985,45 +1004,52 @@ PLUGIN STYLES
                 font-weight: 100;
                 font-family: 'bebasThin';
             }
-            hr {
-                @include mobile {
-                    margin-right: 27px;
-                    position: relative;
-                    top: -18px;
-                }
-                @include tablet {
-                    position: relative;
-                    top: -18px;
-                    margin-right: 80px;
-                }
-                @include desktop {
-                    margin-right: 40px;
-                    position: relative;
-                    top: -25px;
-                }
-                @include xlarge {
-                    margin-right: 60px;
-                    position: relative;
-                    top: -25px;
-                }
-                margin-right: 80px;
+
+        }
+        hr {
+            @include mobile {
+              width: 80%;
+              position: relative;
+              float: left;
+              top: -25px;
             }
+            @include tablet {
+                position: relative;
+                top: -18px;
+                width: 90%;
+                float: left;
+            }
+            @include desktop {
+                margin-right: 40px;
+                position: relative;
+                top: -25px;
+            }
+            @include xlarge {
+                margin-right: 60px;
+                position: relative;
+                top: -25px;
+            }
+            margin-right: 80px;
         }
         #what-sub-text {
             @include mobile {
+              width: 90%;
                 font-size: 3.8vw !important;
                 top: -34px;
                 position: relative;
             }
             @include tablet {
+                width: 90%;
                 font-size: 1.6em !important;
-                top: -37px;
+                top: -25px;
                 position: relative;
+                line-height: .9em;
             }
             @include desktop {
                 font-size: 3.0vw !important;
                 top: -30px;
                 position: relative;
+                line-height: 1em;
             }
             @include xlarge {
                 font-size: 2.3vw !important;
@@ -1067,7 +1093,7 @@ PLUGIN STYLES
                 margin-right: 35px;
             }
             @include tablet {
-                margin-top: 40px;
+                margin-top: 60px;
                 margin-bottom: 30px;
                 margin-right: 35px;
             }
@@ -1082,13 +1108,14 @@ PLUGIN STYLES
                 margin-right: 50px;
             }
             margin-top: 80px;
-            line-height: 0.5vw;
+            line-height: 0.7vw;
             .list-head {
                 @include mobile {
-                    font-size: 2.3vw;
+                    font-size: 3.5vw;
+                    margin-bottom: 10px;
                 }
                 @include tablet {
-                    font-size: 2.3vw;
+                    font-size: 2.6vw;
                 }
                 @include desktop {
                     font-size: 2.3vw;
@@ -1101,22 +1128,28 @@ PLUGIN STYLES
                 font-size: 1.5vw;
                 .list-description {
                     @include mobile {
-                        font-size: 3.3vw;
+                        font-size: 3.0vw;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
                     }
                     @include tablet {
-                        font-size: 3.3vw;
+                        font-size: 2.8vw;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
                     }
                     @include desktop {
-                        font-size: 3.3vw;
+                        font-size: 3vw;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
                     }
                     @include xlarge {
                         font-size: 2.8vw;
                     }
                     color: white;
                     font-size: 2vw;
-                    font-weight: 200;
+                    font-weight: 400;
                     text-align: right;
-                    font-family: 'bebasLight' !important;
+                    font-family: 'bebasRegular' !important;
                     a {
                       color: white;
                     }
@@ -1144,17 +1177,21 @@ PLUGIN STYLES
             width: 100% !important;
         }
         @include angle(both, true);
-        background-image: url("../images/our-services-bg.png") !important;
+        background-image: url("../img/our-services-bg.png") !important;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         .main-title {
             @include mobile {
                 padding-top: 30px;
                 padding-bottom: 30px;
+                position: relative;
+                right: 40px;
             }
             @include tablet {
                 padding-top: 30px;
                 padding-bottom: 30px;
+                position: relative;
+                right: 20px;
             }
             @include desktop {
                 padding-top: 30px;
@@ -1170,11 +1207,15 @@ PLUGIN STYLES
             .services-list {
                 @include mobile {
                     margin-bottom: 2px;
-                    font-size: 1.5vw;
+                    font-size: 2.2vw;
+                    position: relative;
+                    left: 30px;
                 }
                 @include tablet {
                     margin-bottom: 2px;
-                    font-size: 1.6em;
+                    font-size: 1.35em;
+                    position: relative;
+                    left: 20px;
                     li {
                       display: inline-block !important;
                       margin: 0 auto;
@@ -1182,7 +1223,7 @@ PLUGIN STYLES
                 }
                 @include desktop {
                     margin-bottom: 2px;
-                    font-size: 1.6vw;
+                    font-size: 1.8vw;
                 }
                 @include xlarge {
                     margin-bottom: 2px;
@@ -1199,12 +1240,14 @@ PLUGIN STYLES
             @include mobile {
                 font-size: 12.2vw;
                 line-height: 7.8vw;
-                text-align: center;
+                text-align: left;
+                position: relative;
+                left: 15px;
             }
             @include tablet {
-                font-size: 12.2vw;
-                line-height: 7.8vw;
-                text-align: center;
+                font-size: 14.7vw;
+                line-height: 9.8vw;
+                text-align: left;
             }
             @include desktop {
                 font-size: 12.2vw;
@@ -1219,6 +1262,10 @@ PLUGIN STYLES
             line-height: 7.2vw;
             .thin-text {
                 font-family: 'bebasRegular' !important;
+                @include desktop{
+                  display: block;
+                  margin-top: 15px;
+                }
             }
             .thinner-text {
                 font-family: 'bebasLight' !important;
@@ -1289,12 +1336,20 @@ PLUGIN STYLES
                     font-size: 17vw !important;
                     line-height: 17vw !important;
                 }
+                @include desktop {
+                  font-size: 1.8em !important;
+                  display: block;
+                  margin-top: 30px;
+                }
                 font-family: 'bebasLight' !important;
                 font-size: 10vw !important;
 
             }
             .thinner-text {
                 font-family: 'bebasThin' !important;
+                @include desktop {
+                  font-size: 1.5em;
+                }
             }
         }
         #textarea {
@@ -1378,7 +1433,7 @@ PLUGIN STYLES
                 display: inline-block;
                 .footerText {
                     @include mobile {
-                        font-size: 1.7vw;
+                        font-size: 2.2vw;
                     }
                     @include tablet {
                         font-size: 1.7vw;
@@ -1482,7 +1537,7 @@ nav {
     top: 50.5%;
     right: 0.5%;
     @include tablet {
-      right: 8.5% !important;
+      right: 1.5% !important;
     }
 }
 .fa-arrow-circle-o-left {
@@ -1610,6 +1665,9 @@ nav {
 }
 //Sticky Nav on Scroll Style
 .sticky {
+    @include mobile{
+      height: 50px !important;
+    }
     position: fixed;
     width: 100%;
     left: 0;

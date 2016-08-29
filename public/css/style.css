@@ -4488,6 +4488,10 @@ PLUGIN STYLES
       #skewed #why-exist-block .why-text .thin-text {
         font-weight: 200;
         font-family: 'bebaslight'; }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #why-exist-block .why-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
       #skewed #why-exist-block .why-text .thinner-text {
         font-weight: 100;
         font-family: 'bebasThin'; }
@@ -4508,7 +4512,7 @@ PLUGIN STYLES
           position: relative; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #why-exist-block #why-sub-text {
-          font-size: 3vw !important;
+          font-size: 2.3em !important;
           top: -35px;
           position: relative; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
@@ -4520,12 +4524,12 @@ PLUGIN STYLES
       margin-right: 480px; }
       @media (max-width: 425px) {
         #skewed #why-exist-block hr {
-          margin-right: 170px;
+          width: 75%;
           position: relative;
           top: -18px; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #why-exist-block hr {
-          margin-right: 80px !important;
+          width: 80%;
           position: relative;
           top: -18px; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
@@ -4659,18 +4663,30 @@ PLUGIN STYLES
       #skewed #how-block .how-text .thin-text {
         font-weight: 200;
         font-family: 'bebaslight'; }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #how-block .how-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
       #skewed #how-block .how-text .thinner-text {
         font-weight: 100;
         font-family: 'bebasThin'; }
-      @media (max-width: 425px) {
-        #skewed #how-block .how-text hr {
-          margin-right: 27px;
-          position: relative;
-          top: -18px; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
-        #skewed #how-block .how-text hr {
-          position: relative;
-          margin-right: 80px; } }
+    @media (max-width: 425px) {
+      #skewed #how-block hr {
+        width: 80%;
+        position: relative;
+        float: left;
+        top: -25px; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #skewed #how-block hr {
+        position: relative;
+        top: -18px;
+        margin-right: 80px; } }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      #skewed #how-block hr {
+        position: relative;
+        top: -28px;
+        width: 90%;
+        float: left; } }
     #skewed #how-block #how-sub-text {
       width: 100%;
       color: white !important;
@@ -4678,19 +4694,23 @@ PLUGIN STYLES
       font-family: 'bebasRegular' !important; }
       @media (max-width: 425px) {
         #skewed #how-block #how-sub-text {
+          width: 90%;
           font-size: 3.8vw !important;
-          top: -8px;
+          top: -37px;
           position: relative; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #how-block #how-sub-text {
           font-size: 1.75em !important;
-          top: -8px;
-          position: relative; } }
+          top: -25px;
+          position: relative;
+          width: 95%;
+          line-height: 1em; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #how-block #how-sub-text {
           font-size: 3.0vw !important;
-          top: -8px;
-          position: relative; } }
+          top: -38px;
+          position: relative;
+          line-height: 1em; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #how-block #how-sub-text {
           font-size: 2.3vw !important;
@@ -4776,28 +4796,30 @@ PLUGIN STYLES
       #skewed #what-block .what-text .thinner-text {
         font-weight: 100;
         font-family: 'bebasThin'; }
-      #skewed #what-block .what-text hr {
-        margin-right: 80px; }
-        @media (max-width: 425px) {
-          #skewed #what-block .what-text hr {
-            margin-right: 27px;
-            position: relative;
-            top: -18px; } }
-        @media (min-width: 768px) and (max-width: 1023px) {
-          #skewed #what-block .what-text hr {
-            position: relative;
-            top: -18px;
-            margin-right: 80px; } }
-        @media (min-width: 1024px) and (max-width: 1439px) {
-          #skewed #what-block .what-text hr {
-            margin-right: 40px;
-            position: relative;
-            top: -25px; } }
-        @media (min-width: 1440px) and (max-width: 2564px) {
-          #skewed #what-block .what-text hr {
-            margin-right: 60px;
-            position: relative;
-            top: -25px; } }
+    #skewed #what-block hr {
+      margin-right: 80px; }
+      @media (max-width: 425px) {
+        #skewed #what-block hr {
+          width: 80%;
+          position: relative;
+          float: left;
+          top: -25px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #skewed #what-block hr {
+          position: relative;
+          top: -18px;
+          width: 90%;
+          float: left; } }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        #skewed #what-block hr {
+          margin-right: 40px;
+          position: relative;
+          top: -25px; } }
+      @media (min-width: 1440px) and (max-width: 2564px) {
+        #skewed #what-block hr {
+          margin-right: 60px;
+          position: relative;
+          top: -25px; } }
     #skewed #what-block #what-sub-text {
       width: 100%;
       color: white !important;
@@ -4805,19 +4827,23 @@ PLUGIN STYLES
       font-family: 'bebasRegular' !important; }
       @media (max-width: 425px) {
         #skewed #what-block #what-sub-text {
+          width: 90%;
           font-size: 3.8vw !important;
           top: -34px;
           position: relative; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #what-block #what-sub-text {
+          width: 90%;
           font-size: 1.6em !important;
-          top: -37px;
-          position: relative; } }
+          top: -25px;
+          position: relative;
+          line-height: .9em; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #what-block #what-sub-text {
           font-size: 3.0vw !important;
           top: -30px;
-          position: relative; } }
+          position: relative;
+          line-height: 1em; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #what-block #what-sub-text {
           font-size: 2.3vw !important;
@@ -4847,7 +4873,7 @@ PLUGIN STYLES
         width: 100% !important; } }
     #skewed #analysis-block #analysis-list {
       margin-top: 80px;
-      line-height: 0.5vw; }
+      line-height: 0.7vw; }
       @media (max-width: 425px) {
         #skewed #analysis-block #analysis-list {
           margin-top: 40px;
@@ -4855,7 +4881,7 @@ PLUGIN STYLES
           margin-right: 35px; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #analysis-block #analysis-list {
-          margin-top: 40px;
+          margin-top: 60px;
           margin-bottom: 30px;
           margin-right: 35px; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
@@ -4874,10 +4900,11 @@ PLUGIN STYLES
         font-size: 1.5vw; }
         @media (max-width: 425px) {
           #skewed #analysis-block #analysis-list .list-head {
-            font-size: 2.3vw; } }
+            font-size: 3.5vw;
+            margin-bottom: 10px; } }
         @media (min-width: 768px) and (max-width: 1023px) {
           #skewed #analysis-block #analysis-list .list-head {
-            font-size: 2.3vw; } }
+            font-size: 2.6vw; } }
         @media (min-width: 1024px) and (max-width: 1439px) {
           #skewed #analysis-block #analysis-list .list-head {
             font-size: 2.3vw; } }
@@ -4887,18 +4914,24 @@ PLUGIN STYLES
         #skewed #analysis-block #analysis-list .list-head .list-description {
           color: white;
           font-size: 2vw;
-          font-weight: 200;
+          font-weight: 400;
           text-align: right;
-          font-family: 'bebasLight' !important; }
+          font-family: 'bebasRegular' !important; }
           @media (max-width: 425px) {
             #skewed #analysis-block #analysis-list .list-head .list-description {
-              font-size: 3.3vw; } }
+              font-size: 3.0vw;
+              margin-bottom: 5px;
+              margin-top: 5px; } }
           @media (min-width: 768px) and (max-width: 1023px) {
             #skewed #analysis-block #analysis-list .list-head .list-description {
-              font-size: 3.3vw; } }
+              font-size: 2.8vw;
+              margin-bottom: 5px;
+              margin-top: 5px; } }
           @media (min-width: 1024px) and (max-width: 1439px) {
             #skewed #analysis-block #analysis-list .list-head .list-description {
-              font-size: 3.3vw; } }
+              font-size: 3vw;
+              margin-bottom: 5px;
+              margin-top: 5px; } }
           @media (min-width: 1440px) and (max-width: 2564px) {
             #skewed #analysis-block #analysis-list .list-head .list-description {
               font-size: 2.8vw; } }
@@ -4907,7 +4940,7 @@ PLUGIN STYLES
   #skewed #services-block {
     position: relative;
     z-index: 1;
-    background-image: url("../images/our-services-bg.png") !important;
+    background-image: url("../img/our-services-bg.png") !important;
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (max-width: 425px) {
@@ -4949,11 +4982,15 @@ PLUGIN STYLES
       @media (max-width: 425px) {
         #skewed #services-block .main-title {
           padding-top: 30px;
-          padding-bottom: 30px; } }
+          padding-bottom: 30px;
+          position: relative;
+          right: 40px; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #services-block .main-title {
           padding-top: 30px;
-          padding-bottom: 30px; } }
+          padding-bottom: 30px;
+          position: relative;
+          right: 20px; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #services-block .main-title {
           padding-top: 30px;
@@ -4971,18 +5008,22 @@ PLUGIN STYLES
       @media (max-width: 425px) {
         #skewed #services-block ul .services-list {
           margin-bottom: 2px;
-          font-size: 1.5vw; } }
+          font-size: 2.2vw;
+          position: relative;
+          left: 30px; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #services-block ul .services-list {
           margin-bottom: 2px;
-          font-size: 1.6em; }
+          font-size: 1.35em;
+          position: relative;
+          left: 20px; }
           #skewed #services-block ul .services-list li {
             display: inline-block !important;
             margin: 0 auto; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #services-block ul .services-list {
           margin-bottom: 2px;
-          font-size: 1.6vw; } }
+          font-size: 1.8vw; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #services-block ul .services-list {
           margin-bottom: 2px;
@@ -4995,12 +5036,14 @@ PLUGIN STYLES
         #skewed #services-block .services-text {
           font-size: 12.2vw;
           line-height: 7.8vw;
-          text-align: center; } }
+          text-align: left;
+          position: relative;
+          left: 15px; } }
       @media (min-width: 768px) and (max-width: 1023px) {
         #skewed #services-block .services-text {
-          font-size: 12.2vw;
-          line-height: 7.8vw;
-          text-align: center; } }
+          font-size: 14.7vw;
+          line-height: 9.8vw;
+          text-align: left; } }
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #services-block .services-text {
           font-size: 12.2vw;
@@ -5011,6 +5054,10 @@ PLUGIN STYLES
           line-height: 7.4vw; } }
       #skewed #services-block .services-text .thin-text {
         font-family: 'bebasRegular' !important; }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #services-block .services-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
       #skewed #services-block .services-text .thinner-text {
         font-family: 'bebasLight' !important; }
   #skewed #contact-block {
@@ -5095,8 +5142,16 @@ PLUGIN STYLES
           #skewed #contact-block .contact-text .thin-text {
             font-size: 17vw !important;
             line-height: 17vw !important; } }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #contact-block .contact-text .thin-text {
+            font-size: 1.8em !important;
+            display: block;
+            margin-top: 30px; } }
       #skewed #contact-block .contact-text .thinner-text {
         font-family: 'bebasThin' !important; }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #contact-block .contact-text .thinner-text {
+            font-size: 1.5em; } }
     #skewed #contact-block #textarea {
       float: none !important; }
   #skewed #footer-block {
@@ -5186,7 +5241,7 @@ PLUGIN STYLES
           display: inline-block; }
           @media (max-width: 425px) {
             #skewed #footer-block #second-footer #footerCopy .footerText {
-              font-size: 1.7vw; } }
+              font-size: 2.2vw; } }
           @media (min-width: 768px) and (max-width: 1023px) {
             #skewed #footer-block #second-footer #footerCopy .footerText {
               font-size: 1.7vw; } }
@@ -5276,7 +5331,7 @@ nav {
   right: 0.5%; }
   @media (min-width: 768px) and (max-width: 1023px) {
     #showEbook {
-      right: 8.5% !important; } }
+      right: 1.5% !important; } }
 
 .fa-arrow-circle-o-left {
   color: black; }
@@ -5404,6 +5459,9 @@ nav {
   background-color: white;
   -webkit-box-shadow: 0 15px 15px -15px #000;
   box-shadow: 0 15px 15px -15px #000; }
+  @media (max-width: 425px) {
+    .sticky {
+      height: 50px !important; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .sticky {
       height: 100px !important; } }
