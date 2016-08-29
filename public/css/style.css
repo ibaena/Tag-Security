@@ -4492,6 +4492,10 @@ PLUGIN STYLES
           #skewed #why-exist-block .why-text .thin-text {
             display: block;
             margin-top: 15px; } }
+        @media (min-width: 1440px) and (max-width: 2564px) {
+          #skewed #why-exist-block .why-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
       #skewed #why-exist-block .why-text .thinner-text {
         font-weight: 100;
         font-family: 'bebasThin'; }
@@ -4539,7 +4543,7 @@ PLUGIN STYLES
           top: -25px; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #why-exist-block hr {
-          margin-right: 480px;
+          width: 50%;
           position: relative;
           top: -25px; } }
   #skewed .first-divider {
@@ -4656,7 +4660,8 @@ PLUGIN STYLES
         #skewed #how-block .how-text {
           color: white;
           font-size: 9vw;
-          line-height: 7.7vw; } }
+          line-height: 6.2vw;
+          width: 800px; } }
       #skewed #how-block .how-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
@@ -4667,9 +4672,25 @@ PLUGIN STYLES
           #skewed #how-block .how-text .thin-text {
             display: block;
             margin-top: 15px; } }
+        @media (min-width: 1440px) and (max-width: 2564px) {
+          #skewed #how-block .how-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
+        @media (min-width: 2565px) {
+          #skewed #how-block .how-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
       #skewed #how-block .how-text .thinner-text {
         font-weight: 100;
         font-family: 'bebasThin'; }
+        @media (min-width: 1440px) and (max-width: 2564px) {
+          #skewed #how-block .how-text .thinner-text {
+            display: block;
+            margin-top: 15px; } }
+        @media (min-width: 2565px) {
+          #skewed #how-block .how-text .thinner-text {
+            display: block;
+            margin-top: 15px; } }
     @media (max-width: 425px) {
       #skewed #how-block hr {
         width: 80%;
@@ -4686,6 +4707,12 @@ PLUGIN STYLES
         position: relative;
         top: -28px;
         width: 90%;
+        float: left; } }
+    @media (min-width: 1440px) and (max-width: 2564px) {
+      #skewed #how-block hr {
+        position: relative;
+        top: -28px;
+        width: 450px;
         float: left; } }
     #skewed #how-block #how-sub-text {
       width: 100%;
@@ -4714,8 +4741,9 @@ PLUGIN STYLES
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #how-block #how-sub-text {
           font-size: 2.3vw !important;
-          top: -8px;
-          position: relative; } }
+          top: -38px;
+          position: relative;
+          line-height: 1em; } }
   #skewed #what-block {
     background-image: -webkit-gradient(linear, 865 0, 0 0, color-stop(0.028, #0b1fa9), to(#091b94));
     background-image: -webkit-linear-gradient(180deg, #0b1fa9 2.8%, #091b94);
@@ -4817,7 +4845,8 @@ PLUGIN STYLES
           top: -25px; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #what-block hr {
-          margin-right: 60px;
+          float: left;
+          width: 450px;
           position: relative;
           top: -25px; } }
     #skewed #what-block #what-sub-text {
@@ -4848,7 +4877,8 @@ PLUGIN STYLES
         #skewed #what-block #what-sub-text {
           font-size: 2.3vw !important;
           top: -35px;
-          position: relative; } }
+          position: relative;
+          line-height: 1em; } }
   #skewed #analysis-block {
     background-image: url("../img/analysis.png"), url("../img/analysis-bg.png");
     background-size: 10% 80%, 100% 100%;
@@ -4934,7 +4964,9 @@ PLUGIN STYLES
               margin-top: 5px; } }
           @media (min-width: 1440px) and (max-width: 2564px) {
             #skewed #analysis-block #analysis-list .list-head .list-description {
-              font-size: 2.8vw; } }
+              font-size: 2.8vw;
+              margin-bottom: 5px;
+              margin-top: 5px; } }
           #skewed #analysis-block #analysis-list .list-head .list-description a {
             color: white; }
   #skewed #services-block {
@@ -5027,7 +5059,7 @@ PLUGIN STYLES
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #services-block ul .services-list {
           margin-bottom: 2px;
-          font-size: 1.6vw; } }
+          font-size: 1.54em; } }
     #skewed #services-block .services-text {
       color: #0D47A1;
       font-size: 10.2vw;
@@ -5050,11 +5082,15 @@ PLUGIN STYLES
           line-height: 7.8vw; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #services-block .services-text {
-          font-size: 12.4vw;
-          line-height: 7.4vw; } }
+          font-size: 12em;
+          line-height: .65em; } }
       #skewed #services-block .services-text .thin-text {
         font-family: 'bebasRegular' !important; }
         @media (min-width: 1024px) and (max-width: 1439px) {
+          #skewed #services-block .services-text .thin-text {
+            display: block;
+            margin-top: 15px; } }
+        @media (min-width: 1440px) and (max-width: 2564px) {
           #skewed #services-block .services-text .thin-text {
             display: block;
             margin-top: 15px; } }
@@ -5131,6 +5167,9 @@ PLUGIN STYLES
           font-size: 12vw;
           text-align: center !important;
           line-height: 57px;
+          margin-top: 0 !important; } }
+      @media (min-width: 1440px) and (max-width: 2564px) {
+        #skewed #contact-block .contact-text {
           margin-top: 0 !important; } }
       #skewed #contact-block .contact-text .thin-text {
         font-family: 'bebasLight' !important;

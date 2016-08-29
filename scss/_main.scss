@@ -711,6 +711,10 @@ PLUGIN STYLES
                   display: block;
                   margin-top: 15px;
                 }
+                @include xlarge {
+                  display: block;
+                  margin-top: 15px;
+                }
             }
             .thinner-text {
                 font-weight: 100;
@@ -760,7 +764,7 @@ PLUGIN STYLES
                 top: -25px;
             }
             @include xlarge {
-                margin-right: 480px;
+              width: 50%;
                 position: relative;
                 top: -25px;
             }
@@ -865,7 +869,8 @@ PLUGIN STYLES
             @include xlarge {
                 color: white;
                 font-size: 9vw;
-                line-height: 7.7vw;
+                line-height: 6.2vw;
+                width: 800px;
             }
             color: white;
             font-size: 8vw;
@@ -881,10 +886,26 @@ PLUGIN STYLES
                   display: block;
                   margin-top: 15px;
                 }
+                @include xlarge {
+                  display: block;
+                  margin-top: 15px;
+                }
+                @include wide {
+                  display: block;
+                  margin-top: 15px;
+                }
             }
             .thinner-text {
                 font-weight: 100;
                 font-family: 'bebasThin';
+                @include xlarge {
+                  display: block;
+                  margin-top: 15px;
+                }
+                @include wide {
+                  display: block;
+                  margin-top: 15px;
+                }
             }
         }
         hr {
@@ -899,10 +920,16 @@ PLUGIN STYLES
                 top: -18px;
                 margin-right: 80px;
             }
-            @include desktop{
+            @include desktop {
                 position: relative;
                 top: -28px;
                 width: 90%;
+                float: left;
+            }
+            @include xlarge {
+                position: relative;
+                top: -28px;
+                width: 450px;
                 float: left;
             }
         }
@@ -928,8 +955,9 @@ PLUGIN STYLES
             }
             @include xlarge {
                 font-size: 2.3vw !important;
-                top: -8px;
+                top: -38px;
                 position: relative;
+                line-height: 1em;
             }
             width: 100%;
             color: white !important;
@@ -1025,7 +1053,8 @@ PLUGIN STYLES
                 top: -25px;
             }
             @include xlarge {
-                margin-right: 60px;
+                float: left;
+                width: 450px;
                 position: relative;
                 top: -25px;
             }
@@ -1055,6 +1084,7 @@ PLUGIN STYLES
                 font-size: 2.3vw !important;
                 top: -35px;
                 position: relative;
+                line-height: 1em;
             }
             width: 100%;
             color: white !important;
@@ -1144,6 +1174,8 @@ PLUGIN STYLES
                     }
                     @include xlarge {
                         font-size: 2.8vw;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
                     }
                     color: white;
                     font-size: 2vw;
@@ -1227,7 +1259,7 @@ PLUGIN STYLES
                 }
                 @include xlarge {
                     margin-bottom: 2px;
-                    font-size: 1.6vw;
+                    font-size: 1.54em;
                 }
                 margin-bottom: 15px;
                 text-align: right;
@@ -1254,8 +1286,8 @@ PLUGIN STYLES
                 line-height: 7.8vw;
             }
             @include xlarge {
-                font-size: 12.4vw;
-                line-height: 7.4vw;
+                font-size: 12em;
+                line-height: .65em;
             }
             color: #0D47A1;
             font-size: 10.2vw;
@@ -1263,6 +1295,10 @@ PLUGIN STYLES
             .thin-text {
                 font-family: 'bebasRegular' !important;
                 @include desktop{
+                  display: block;
+                  margin-top: 15px;
+                }
+                @include xlarge {
                   display: block;
                   margin-top: 15px;
                 }
@@ -1322,6 +1358,9 @@ PLUGIN STYLES
                 text-align: center !important;
                 line-height: 57px;
                 margin-top: 0 !important;
+            }
+            @include xlarge {
+              margin-top: 0 !important;
             }
             color: white;
             font-size: 8vw;
