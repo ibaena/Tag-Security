@@ -4473,7 +4473,7 @@ PLUGIN STYLES
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #why-exist-block .why-text {
           color: white;
-          font-size: 13em;
+          font-size: 8em;
           line-height: 8.7vw; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #why-exist-block .why-text {
@@ -4812,7 +4812,8 @@ PLUGIN STYLES
         #skewed #what-block .what-text {
           color: white;
           font-size: 10vw;
-          line-height: 7vw; } }
+          line-height: 7vw;
+          width: 500px; } }
       #skewed #what-block .what-text .bold-text {
         font-weight: 400;
         font-family: 'bebasBold'; }
