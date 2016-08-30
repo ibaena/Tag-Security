@@ -4473,7 +4473,7 @@ PLUGIN STYLES
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #why-exist-block .why-text {
           color: white;
-          font-size: 8em;
+          font-size: 10.5em;
           line-height: 8.7vw; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #why-exist-block .why-text {
@@ -4652,8 +4652,9 @@ PLUGIN STYLES
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #how-block .how-text {
           color: white;
-          font-size: 12.3vw;
-          line-height: 7.7vw; } }
+          font-size: 10.5em;
+          line-height: 8.7vw;
+          width: 600px; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #how-block .how-text {
           color: white;
@@ -4806,7 +4807,7 @@ PLUGIN STYLES
       @media (min-width: 1024px) and (max-width: 1439px) {
         #skewed #what-block .what-text {
           color: white;
-          font-size: 13vw;
+          font-size: 10.5em;
           line-height: 8.7vw; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #what-block .what-text {
@@ -5154,7 +5155,7 @@ PLUGIN STYLES
       color: white;
       font-size: 8vw;
       text-align: right !important;
-      line-height: 7.1vw;
+      line-height: 1em;
       margin-top: 75px !important; }
       @media (max-width: 425px) {
         #skewed #contact-block .contact-text {
@@ -5167,6 +5168,9 @@ PLUGIN STYLES
           text-align: center !important;
           line-height: 57px;
           margin-top: 0 !important; } }
+      @media (min-width: 1440px) and (max-width: 2564px) {
+        #skewed #contact-block .contact-text {
+          line-height: 1em; } }
       @media (min-width: 1440px) and (max-width: 2564px) {
         #skewed #contact-block .contact-text {
           margin-top: 0 !important; } }

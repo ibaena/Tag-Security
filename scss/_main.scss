@@ -689,7 +689,7 @@ PLUGIN STYLES
             }
             @include desktop {
                 color: white;
-                font-size: 8em;
+                font-size: 10.5em;
                 line-height: 8.7vw;
             }
             @include xlarge {
@@ -862,8 +862,9 @@ PLUGIN STYLES
             }
             @include desktop {
                 color: white;
-                font-size: 12.3vw;
-                line-height: 7.7vw;
+                font-size: 10.5em;
+                line-height: 8.7vw;
+                width: 600px;
             }
             @include xlarge {
                 color: white;
@@ -1008,7 +1009,7 @@ PLUGIN STYLES
             }
             @include desktop {
                 color: white;
-                font-size: 13vw;
+                font-size: 10.5em;
                 line-height: 8.7vw;
             }
             @include xlarge {
@@ -1360,12 +1361,15 @@ PLUGIN STYLES
                 margin-top: 0 !important;
             }
             @include xlarge {
+              line-height: 1em
+            }
+            @include xlarge {
               margin-top: 0 !important;
             }
             color: white;
             font-size: 8vw;
             text-align: right !important;
-            line-height: 7.1vw;
+            line-height: 1em;
             margin-top: 75px !important;
             .thin-text {
                 @include mobile {
