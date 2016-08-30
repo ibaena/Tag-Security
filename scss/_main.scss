@@ -1652,13 +1652,13 @@ nav {
             }
             #ebook-thin {
                 @include mobile {
-                    font-size: 5vw !important;
+                    font-size: 4vw !important;
                 }
                 @include tablet {
-                    font-size: 5vw !important;
+                    font-size: 4vw !important;
                 }
                 @include desktop {
-                    font-size: 5vw !important;
+                    font-size: 4vw !important;
                 }
                 @include xlarge {
                     font-size: 3vw !important;
@@ -1693,6 +1693,7 @@ nav {
                 }
                 @include desktop {
                     font-size: 1.6vw !important;
+                    line-height: 1.5vw;
                 }
                 @include xlarge {
                     font-size: 1vw !important;
